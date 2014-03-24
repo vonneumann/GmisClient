@@ -1,0 +1,36 @@
+D:\担保业务系统\GmisClientSrc2005\DocumentManager\obj\Debug\ResolveAssemblyReference.cache
+D:\担保业务系统\GmisClientSrc2005\DocumentManager\obj\Debug\Interop.Microsoft.Office.Core.dll
+D:\担保业务系统\GmisClientSrc2005\DocumentManager\obj\Debug\Interop.VBIDE.dll
+D:\担保业务系统\GmisClientSrc2005\DocumentManager\obj\Debug\DocumentManager.csproj.ResolveComReference.cache
+D:\担保业务系统\GmisClientSrc2005\DocumentManager\bin\Debug\DocumentManager.dll
+D:\担保业务系统\GmisClientSrc2005\DocumentManager\bin\Debug\DocumentManager.pdb
+D:\担保业务系统\GmisClientSrc2005\DocumentManager\bin\Debug\Interop.Microsoft.Office.Core.dll
+D:\担保业务系统\GmisClientSrc2005\DocumentManager\bin\Debug\Interop.VBIDE.dll
+D:\担保业务系统\GmisClientSrc2005\DocumentManager\bin\Debug\Interop.Word.dll
+D:\担保业务系统\GmisClientSrc2005\DocumentManager\obj\Debug\Interop.Word.dll
+D:\担保业务系统\GmisClientSrc2005\DocumentManager\obj\Debug\DocumentManager.dll
+D:\担保业务系统\GmisClientSrc2005\DocumentManager\obj\Debug\DocumentManager.pdb
+D:\担保业务系统\GmisClientSrc2005 - 副本\DocumentManager\bin\Debug\DocumentManager.dll
+D:\担保业务系统\GmisClientSrc2005 - 副本\DocumentManager\bin\Debug\DocumentManager.pdb
+D:\担保业务系统\GmisClientSrc2005 - 副本\DocumentManager\bin\Debug\Interop.Microsoft.Office.Core.dll
+D:\担保业务系统\GmisClientSrc2005 - 副本\DocumentManager\bin\Debug\Interop.VBIDE.dll
+D:\担保业务系统\GmisClientSrc2005 - 副本\DocumentManager\bin\Debug\Interop.Word.dll
+D:\担保业务系统\GmisClientSrc2005 - 副本\DocumentManager\obj\Debug\ResolveAssemblyReference.cache
+D:\担保业务系统\GmisClientSrc2005 - 副本\DocumentManager\obj\Debug\Interop.Microsoft.Office.Core.dll
+D:\担保业务系统\GmisClientSrc2005 - 副本\DocumentManager\obj\Debug\Interop.VBIDE.dll
+D:\担保业务系统\GmisClientSrc2005 - 副本\DocumentManager\obj\Debug\Interop.Word.dll
+D:\担保业务系统\GmisClientSrc2005 - 副本\DocumentManager\obj\Debug\DocumentManager.csproj.ResolveComReference.cache
+D:\担保业务系统\GmisClientSrc2005 - 副本\DocumentManager\obj\Debug\DocumentManager.dll
+D:\担保业务系统\GmisClientSrc2005 - 副本\DocumentManager\obj\Debug\DocumentManager.pdb
+N:\GMIS\GmisClientSrc2005 - 副本\DocumentManager\bin\Debug\DocumentManager.dll
+N:\GMIS\GmisClientSrc2005 - 副本\DocumentManager\bin\Debug\DocumentManager.pdb
+N:\GMIS\GmisClientSrc2005 - 副本\DocumentManager\bin\Debug\Interop.Microsoft.Office.Core.dll
+N:\GMIS\GmisClientSrc2005 - 副本\DocumentManager\bin\Debug\Interop.VBIDE.dll
+N:\GMIS\GmisClientSrc2005 - 副本\DocumentManager\bin\Debug\Interop.Word.dll
+N:\GMIS\GmisClientSrc2005 - 副本\DocumentManager\obj\Debug\ResolveAssemblyReference.cache
+N:\GMIS\GmisClientSrc2005 - 副本\DocumentManager\obj\Debug\Interop.Microsoft.Office.Core.dll
+N:\GMIS\GmisClientSrc2005 - 副本\DocumentManager\obj\Debug\Interop.VBIDE.dll
+N:\GMIS\GmisClientSrc2005 - 副本\DocumentManager\obj\Debug\Interop.Word.dll
+N:\GMIS\GmisClientSrc2005 - 副本\DocumentManager\obj\Debug\DocumentManager.csproj.ResolveComReference.cache
+N:\GMIS\GmisClientSrc2005 - 副本\DocumentManager\obj\Debug\DocumentManager.dll
+N:\GMIS\GmisClientSrc2005 - 副本\DocumentManager\obj\Debug\DocumentManager.pdb

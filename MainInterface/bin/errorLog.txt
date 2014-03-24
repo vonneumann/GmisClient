@@ -1,0 +1,1378 @@
+2013/11/22 17:51:09
+系统错误
+发生无法预知的错误！
+
+错误来源：Microsoft.VisualBasic
+错误消息：从字符串“#.##”到类型“Integer”的转换无效。
+项目任务信息：   在 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   在 MainInterface.frmMeetingRecord.frmMeetingRecord_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmMeetingRecord.vb:行号 2339
+----------------------
+2013/11/22 18:02:30
+系统错误
+发生无法预知的错误！
+
+错误来源：mscorlib
+错误消息：索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+项目任务信息：   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 MainInterface.frmMeetingRecord.frmMeetingRecord_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmMeetingRecord.vb:行号 2339
+----------------------
+2013/11/22 18:02:35
+系统错误
+发生无法预知的错误！
+
+错误来源：mscorlib
+错误消息：索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+项目任务信息：   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 MainInterface.frmMeetingRecord.frmMeetingRecord_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmMeetingRecord.vb:行号 2339
+----------------------
+2013/11/25 11:32:33
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器未能识别 HTTP 头 SOAPAction 的值: http://tempuri.org/GetProjectExpandDateInfo。
+   在 System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   在 System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   在 System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   在 System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)
+   在 System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetProjectExpandDateInfo(String strSQL_Condition_ProjectExpandDate) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 2380
+   在 MainInterface.frmShowProjectInfo.GetProjectExpandInfo(String ProjectCode) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3636
+   在 MainInterface.frmShowProjectInfo.frmShowProjectInfo_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3606
+----------------------
+2013/11/25 11:36:48
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器未能识别 HTTP 头 SOAPAction 的值: http://tempuri.org/GetProjectExpandDateInfo。
+   在 System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   在 System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   在 System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   在 System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)
+   在 System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetProjectExpandDateInfo(String strSQL_Condition_ProjectExpandDate) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 2380
+   在 MainInterface.frmShowProjectInfo.GetProjectExpandInfo(String ProjectCode) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3636
+   在 MainInterface.frmShowProjectInfo.frmShowProjectInfo_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3606
+----------------------
+2013/11/25 11:37:33
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器未能识别 HTTP 头 SOAPAction 的值: http://tempuri.org/GetProjectExpandDateInfo。
+   在 System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   在 System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   在 System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   在 System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)
+   在 System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetProjectExpandDateInfo(String strSQL_Condition_ProjectExpandDate) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 2380
+   在 MainInterface.frmShowProjectInfo.GetProjectExpandInfo(String ProjectCode) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3636
+   在 MainInterface.frmShowProjectInfo.frmShowProjectInfo_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3606
+----------------------
+2013/11/25 11:45:08
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器未能识别 HTTP 头 SOAPAction 的值: http://tempuri.org/GetProjectExpandDateInfo。
+   在 System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   在 System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   在 System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   在 System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)
+   在 System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetProjectExpandDateInfo(String strSQL_Condition_ProjectExpandDate) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 2380
+   在 MainInterface.frmShowProjectInfo.GetProjectExpandInfo(String ProjectCode) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3636
+   在 MainInterface.frmShowProjectInfo.frmShowProjectInfo_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3606
+----------------------
+2013/11/25 11:45:56
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器未能识别 HTTP 头 SOAPAction 的值: http://tempuri.org/GetProjectExpandDateInfo。
+   在 System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   在 System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   在 System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   在 System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)
+   在 System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetProjectExpandDateInfo(String strSQL_Condition_ProjectExpandDate) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 2380
+   在 MainInterface.frmShowProjectInfo.GetProjectExpandInfo(String ProjectCode) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3636
+   在 MainInterface.frmShowProjectInfo.frmShowProjectInfo_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3606
+----------------------
+2013/11/25 11:46:24
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器未能识别 HTTP 头 SOAPAction 的值: http://tempuri.org/GetProjectExpandDateInfo。
+   在 System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   在 System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   在 System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   在 System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)
+   在 System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetProjectExpandDateInfo(String strSQL_Condition_ProjectExpandDate) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 2380
+   在 MainInterface.frmShowProjectInfo.GetProjectExpandInfo(String ProjectCode) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3636
+   在 MainInterface.frmShowProjectInfo.frmShowProjectInfo_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3606
+----------------------
+2013/11/25 18:28:17
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Windows.Forms
+错误消息：InvalidArgument=“8”的值对于“Index”无效。
+参数名: Index
+项目任务信息：   在 System.Windows.Forms.MenuItem.set_Index(Int32 value)
+   在 MainInterface.frmMainInterface.InitializeComponent() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\frmMainInterface.vb:行号 2187
+   在 MainInterface.frmMainInterface..ctor() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\frmMainInterface.vb:行号 14
+   在 MainInterface.FConsole.ShowMain(String status) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\FConsole.vb:行号 291
+----------------------
+2013/11/25 18:28:21
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Windows.Forms
+错误消息：InvalidArgument=“8”的值对于“Index”无效。
+参数名: Index
+项目任务信息：   在 System.Windows.Forms.MenuItem.set_Index(Int32 value)
+   在 MainInterface.frmMainInterface.InitializeComponent() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\frmMainInterface.vb:行号 2187
+   在 MainInterface.frmMainInterface..ctor() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\frmMainInterface.vb:行号 14
+   在 MainInterface.FConsole.ShowMain(String status) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\FConsole.vb:行号 291
+----------------------
+2013/11/25 18:29:13
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Windows.Forms
+错误消息：InvalidArgument=“9”的值对于“Index”无效。
+参数名: Index
+项目任务信息：   在 System.Windows.Forms.MenuItem.set_Index(Int32 value)
+   在 MainInterface.frmMainInterface.InitializeComponent() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\frmMainInterface.vb:行号 2235
+   在 MainInterface.frmMainInterface..ctor() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\frmMainInterface.vb:行号 14
+   在 MainInterface.FConsole.ShowMain(String status) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\FConsole.vb:行号 291
+----------------------
+2013/11/25 18:31:30
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Windows.Forms
+错误消息：InvalidArgument=“7”的值对于“Index”无效。
+参数名: Index
+项目任务信息：   在 System.Windows.Forms.MenuItem.set_Index(Int32 value)
+   在 MainInterface.frmMainInterface.InitializeComponent() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\frmMainInterface.vb:行号 2235
+   在 MainInterface.frmMainInterface..ctor() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\frmMainInterface.vb:行号 14
+   在 MainInterface.FConsole.ShowMain(String status) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\FConsole.vb:行号 291
+----------------------
+2013/11/25 18:43:46
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Windows.Forms
+错误消息：InvalidArgument=“9”的值对于“Index”无效。
+参数名: Index
+项目任务信息：   在 System.Windows.Forms.MenuItem.set_Index(Int32 value)
+   在 MainInterface.frmMainInterface.InitializeComponent() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\frmMainInterface.vb:行号 2235
+   在 MainInterface.frmMainInterface..ctor() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\frmMainInterface.vb:行号 14
+   在 MainInterface.FConsole.ShowMain(String status) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\FConsole.vb:行号 291
+----------------------
+2013/11/26 11:29:56
+系统错误
+发生无法预知的错误！
+
+错误来源：Microsoft.VisualBasic
+错误消息：未找到文件。
+项目任务信息：   在 Microsoft.VisualBasic.Interaction.Shell(String PathName, AppWinStyle Style, Boolean Wait, Int32 Timeout)
+   在 MainInterface.FConsole.btnQuery_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\FConsole.vb:行号 323
+----------------------
+2013/11/30 15:13:46
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：提交结果不满足业务规则!
+项目任务信息：
+----------------------
+2013/11/30 15:17:22
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器未能识别 HTTP 头 SOAPAction 的值: http://tempuri.org/GetProjectExpandDateInfo。
+   在 System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   在 System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   在 System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   在 System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)
+   在 System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetProjectExpandDateInfo(String strSQL_Condition_ProjectExpandDate) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 2380
+   在 MainInterface.frmShowProjectInfo.GetProjectExpandInfo(String ProjectCode) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3636
+   在 MainInterface.frmShowProjectInfo.frmShowProjectInfo_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3606
+----------------------
+2013/11/30 15:24:21
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器未能识别 HTTP 头 SOAPAction 的值: http://tempuri.org/GetProjectExpandDateInfo。
+   在 System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   在 System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   在 System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   在 System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)
+   在 System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetProjectExpandDateInfo(String strSQL_Condition_ProjectExpandDate) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 2380
+   在 MainInterface.frmShowProjectInfo.GetProjectExpandInfo(String ProjectCode) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3636
+   在 MainInterface.frmShowProjectInfo.frmShowProjectInfo_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3606
+----------------------
+2013/11/30 15:26:17
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：操作超时
+项目任务信息：   在 System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.finishedTask(String workFlowID, String projectID, String finishedTaskID, String finishedFlag, String userID) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 10594
+   在 MainInterface.frmChargeFeeBase.btnCommit_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmChargeFeeBase.vb:行号 781
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 MainInterface.frmBasic.OpenApplyTool(String strProjectCode, String strCorpName, String strWorkFlowID, String strTaskID, Form frmOwner, String User, String taskName, String roleID) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\BasicClass\frmBasic.vb:行号 133
+----------------------
+2013/11/30 15:29:41
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器未能识别 HTTP 头 SOAPAction 的值: http://tempuri.org/GetProjectExpandDateInfo。
+   在 System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   在 System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   在 System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   在 System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)
+   在 System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetProjectExpandDateInfo(String strSQL_Condition_ProjectExpandDate) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 2380
+   在 MainInterface.frmShowProjectInfo.GetProjectExpandInfo(String ProjectCode) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3636
+   在 MainInterface.frmShowProjectInfo.frmShowProjectInfo_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3606
+----------------------
+2013/11/30 20:41:21
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Data
+错误消息：FinancingConsultingRate 既不是表 TServiceType 的 DataColumn 也不是 DataRelation。
+项目任务信息：   在 System.Data.DataRowView.get_Item(String property)
+   在 MainInterface.frmMeetingRecord.ServiceTypeChanged(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmMeetingRecord.vb:行号 5409
+   在 MainInterface.frmMeetingRecord.frmMeetingRecord_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmMeetingRecord.vb:行号 2382
+----------------------
+2013/11/30 21:16:32
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：未找到相应记录!
+源表:project_task
+项目任务信息：
+----------------------
+2013/11/30 21:17:13
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：未找到相应记录!
+源表:project_task
+项目任务信息：
+----------------------
+2013/11/30 21:19:21
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：操作超时
+项目任务信息：   在 System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.finishedTask(String workFlowID, String projectID, String finishedTaskID, String finishedFlag, String userID) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 10594
+   在 MainInterface.frmMeetingRecord.btnCommit_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmMeetingRecord.vb:行号 2806
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 MainInterface.frmBasic.OpenApplyTool(String strProjectCode, String strCorpName, String strWorkFlowID, String strTaskID, Form frmOwner, String User, String taskName, String roleID) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\BasicClass\frmBasic.vb:行号 133
+----------------------
+2013/11/30 21:23:54
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：操作超时
+项目任务信息：   在 System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.finishedTask(String workFlowID, String projectID, String finishedTaskID, String finishedFlag, String userID) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 10594
+   在 MainInterface.frmMeetingRecord.btnCommit_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmMeetingRecord.vb:行号 2806
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 MainInterface.frmBasic.OpenApplyTool(String strProjectCode, String strCorpName, String strWorkFlowID, String strTaskID, Form frmOwner, String User, String taskName, String roleID) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\BasicClass\frmBasic.vb:行号 133
+----------------------
+2013/11/30 21:55:13
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：将截断字符串或二进制数据。
+语句已终止。
+项目任务信息：
+----------------------
+2013/11/30 21:55:52
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：将截断字符串或二进制数据。
+语句已终止。
+项目任务信息：
+----------------------
+2013/11/30 22:19:30
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Windows.Forms
+错误消息：无法绑定到 DataSource 的属性或列 13。
+参数名: dataMember
+项目任务信息：   在 System.Windows.Forms.BindToObject.CheckBinding()
+   在 System.Windows.Forms.Binding.SetListManager(BindingManagerBase bindingManagerBase)
+   在 System.Windows.Forms.ListManagerBindingsCollection.AddCore(Binding dataBinding)
+   在 System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   在 System.Windows.Forms.BindingContext.UpdateBinding(BindingContext newBindingContext, Binding binding)
+   在 System.Windows.Forms.Binding.SetBindableComponent(IBindableComponent value)
+   在 System.Windows.Forms.ControlBindingsCollection.AddCore(Binding dataBinding)
+   在 System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   在 System.Windows.Forms.ControlBindingsCollection.Add(String propertyName, Object dataSource, String dataMember, Boolean formattingEnabled, DataSourceUpdateMode updateMode, Object nullValue, String formatString, IFormatProvider formatInfo)
+   在 System.Windows.Forms.ControlBindingsCollection.Add(String propertyName, Object dataSource, String dataMember)
+   在 MainInterface.frmAffirmFinancingConsultingRate.frmAffirmReviewFee_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmAffirmFinancingConsultingRate.vb:行号 163
+----------------------
+2013/11/30 22:22:28
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Windows.Forms
+错误消息：无法绑定到 DataSource 的属性或列 13。
+参数名: dataMember
+项目任务信息：   在 System.Windows.Forms.BindToObject.CheckBinding()
+   在 System.Windows.Forms.Binding.SetListManager(BindingManagerBase bindingManagerBase)
+   在 System.Windows.Forms.ListManagerBindingsCollection.AddCore(Binding dataBinding)
+   在 System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   在 System.Windows.Forms.BindingContext.UpdateBinding(BindingContext newBindingContext, Binding binding)
+   在 System.Windows.Forms.Binding.SetBindableComponent(IBindableComponent value)
+   在 System.Windows.Forms.ControlBindingsCollection.AddCore(Binding dataBinding)
+   在 System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   在 System.Windows.Forms.ControlBindingsCollection.Add(String propertyName, Object dataSource, String dataMember, Boolean formattingEnabled, DataSourceUpdateMode updateMode, Object nullValue, String formatString, IFormatProvider formatInfo)
+   在 System.Windows.Forms.ControlBindingsCollection.Add(String propertyName, Object dataSource, String dataMember)
+   在 MainInterface.frmAffirmFinancingConsultingRate.frmAffirmReviewFee_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmAffirmFinancingConsultingRate.vb:行号 163
+----------------------
+2013/12/2 10:06:00
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：将截断字符串或二进制数据。
+语句已终止。
+项目任务信息：
+----------------------
+2013/12/2 10:06:42
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：将截断字符串或二进制数据。
+语句已终止。
+项目任务信息：
+----------------------
+2013/12/2 10:07:03
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：将截断字符串或二进制数据。
+语句已终止。
+项目任务信息：
+----------------------
+2013/12/2 10:07:27
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：将截断字符串或二进制数据。
+语句已终止。
+项目任务信息：
+----------------------
+2013/12/2 10:08:15
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：将截断字符串或二进制数据。
+语句已终止。
+项目任务信息：
+----------------------
+2013/12/2 10:09:32
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：将截断字符串或二进制数据。
+语句已终止。
+项目任务信息：
+----------------------
+2013/12/2 10:09:38
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：将截断字符串或二进制数据。
+语句已终止。
+项目任务信息：
+----------------------
+2013/12/2 10:10:17
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：将截断字符串或二进制数据。
+语句已终止。
+项目任务信息：
+----------------------
+2013/12/2 10:11:05
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：将截断字符串或二进制数据。
+语句已终止。
+项目任务信息：
+----------------------
+2013/12/2 11:36:09
+系统错误
+发生无法预知的错误！
+
+错误来源：保存费用失败
+错误消息：另一用户已对源数据进行修改,请对该应用重新处理!
+项目任务信息：
+----------------------
+2013/12/3 19:16:11
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器未能识别 HTTP 头 SOAPAction 的值: http://tempuri.org/GetProjectContractElementInfo。
+   在 System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   在 System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   在 System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   在 System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)
+   在 System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetProjectContractElementInfo(String strSQL_Condition_ProjectContractElement) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 2684
+   在 MainInterface.frmDocumentManageBusiness.delectElement(String projectCode, String itemType, String itemCode) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\qxd\frmDocumentManageBusiness.vb:行号 1487
+----------------------
+2013/12/4 10:14:39
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.Data.SqlClient.SqlException: 列名 'sub_system' 无效。
+   在 WebService_CGMIS.Service1.GetCommonQueryInfo(String strSql) 位置 D:\担保业务系统\GmisServerSrc2005\WebService_CGMIS\App_Code\Service1.asmx.vb:行号 5690
+   --- 内部异常堆栈跟踪的结尾 ---
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetCommonQueryInfo(String strSql) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 12961
+   在 MainInterface.frmMakeContract.BeforeSave() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\qxd\frmMakeContract.vb:行号 1022
+   在 MainInterface.frmDocumentManageBusiness.btnSave_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\qxd\frmDocumentManageBusiness.vb:行号 926
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 MainInterface.frmBasic.OpenApplyTool(String strProjectCode, String strCorpName, String strWorkFlowID, String strTaskID, Form frmOwner, String User, String taskName, String roleID) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\BasicClass\frmBasic.vb:行号 133
+----------------------
+2013/12/4 10:16:02
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器未能识别 HTTP 头 SOAPAction 的值: http://tempuri.org/GetProjectContractElementInfo。
+   在 System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   在 System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   在 System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   在 System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)
+   在 System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetProjectContractElementInfo(String strSQL_Condition_ProjectContractElement) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 2684
+   在 MainInterface.frmDocumentManageBusiness.delectElement(String projectCode, String itemType, String itemCode) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\qxd\frmDocumentManageBusiness.vb:行号 1508
+----------------------
+2013/12/4 10:16:25
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.Data.SqlClient.SqlException: 列名 'sub_system' 无效。
+   在 WebService_CGMIS.Service1.GetCommonQueryInfo(String strSql) 位置 D:\担保业务系统\GmisServerSrc2005\WebService_CGMIS\App_Code\Service1.asmx.vb:行号 5690
+   --- 内部异常堆栈跟踪的结尾 ---
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetCommonQueryInfo(String strSql) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 12961
+   在 MainInterface.frmMakeContract.BeforeSave() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\qxd\frmMakeContract.vb:行号 1022
+   在 MainInterface.frmDocumentManageBusiness.btnSave_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\qxd\frmDocumentManageBusiness.vb:行号 926
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 MainInterface.frmBasic.OpenApplyTool(String strProjectCode, String strCorpName, String strWorkFlowID, String strTaskID, Form frmOwner, String User, String taskName, String roleID) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\BasicClass\frmBasic.vb:行号 133
+----------------------
+2013/12/4 10:16:42
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器未能识别 HTTP 头 SOAPAction 的值: http://tempuri.org/GetProjectContractElementInfo。
+   在 System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   在 System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   在 System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   在 System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)
+   在 System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetProjectContractElementInfo(String strSQL_Condition_ProjectContractElement) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 2684
+   在 MainInterface.frmDocumentManageBusiness.delectElement(String projectCode, String itemType, String itemCode) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\qxd\frmDocumentManageBusiness.vb:行号 1508
+----------------------
+2013/12/4 10:17:37
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.Data.SqlClient.SqlException: 列名 'sub_system' 无效。
+   在 WebService_CGMIS.Service1.GetCommonQueryInfo(String strSql) 位置 D:\担保业务系统\GmisServerSrc2005\WebService_CGMIS\App_Code\Service1.asmx.vb:行号 5690
+   --- 内部异常堆栈跟踪的结尾 ---
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetCommonQueryInfo(String strSql) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 12961
+   在 MainInterface.frmMakeContract.BeforeSave() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\qxd\frmMakeContract.vb:行号 1022
+   在 MainInterface.frmDocumentManageBusiness.btnSave_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\qxd\frmDocumentManageBusiness.vb:行号 926
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 MainInterface.frmBasic.OpenApplyTool(String strProjectCode, String strCorpName, String strWorkFlowID, String strTaskID, Form frmOwner, String User, String taskName, String roleID) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\BasicClass\frmBasic.vb:行号 133
+----------------------
+2013/12/4 10:20:11
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器未能识别 HTTP 头 SOAPAction 的值: http://tempuri.org/GetProjectContractElementInfo。
+   在 System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   在 System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   在 System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   在 System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)
+   在 System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetProjectContractElementInfo(String strSQL_Condition_ProjectContractElement) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 2684
+   在 MainInterface.frmDocumentManageBusiness.delectElement(String projectCode, String itemType, String itemCode) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\qxd\frmDocumentManageBusiness.vb:行号 1508
+----------------------
+2013/12/4 10:20:17
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.Data.SqlClient.SqlException: 列名 'sub_system' 无效。
+   在 WebService_CGMIS.Service1.GetCommonQueryInfo(String strSql) 位置 D:\担保业务系统\GmisServerSrc2005\WebService_CGMIS\App_Code\Service1.asmx.vb:行号 5690
+   --- 内部异常堆栈跟踪的结尾 ---
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetCommonQueryInfo(String strSql) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 12961
+   在 MainInterface.frmMakeContract.BeforeSave() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\qxd\frmMakeContract.vb:行号 1022
+   在 MainInterface.frmDocumentManageBusiness.btnSave_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\qxd\frmDocumentManageBusiness.vb:行号 926
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 MainInterface.frmBasic.OpenApplyTool(String strProjectCode, String strCorpName, String strWorkFlowID, String strTaskID, Form frmOwner, String User, String taskName, String roleID) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\BasicClass\frmBasic.vb:行号 133
+----------------------
+2013/12/4 10:30:39
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器未能识别 HTTP 头 SOAPAction 的值: http://tempuri.org/GetProjectExpandDateInfo。
+   在 System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   在 System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   在 System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   在 System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)
+   在 System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetProjectExpandDateInfo(String strSQL_Condition_ProjectExpandDate) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServer\Reference.vb:行号 2380
+   在 MainInterface.frmShowProjectInfo.GetProjectExpandInfo(String ProjectCode) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3636
+   在 MainInterface.frmShowProjectInfo.frmShowProjectInfo_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\xiaojun\frmShowProjectInfo.vb:行号 3606
+----------------------
+2013/12/4 17:41:49
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 引发类型为“SWSystem.Security.Permissions.InvalidPasswordException”的异常。
+无效的口令！ ---> SWSystem.Security.Permissions.InvalidPasswordException: 引发类型为“SWSystem.Security.Permissions.InvalidPasswordException”的异常。
+无效的口令！
+   在 SWSystem.Security.Permissions.Permission.VerifyLogin(Object userID, String password, String system)
+   在 SWSystem.Security.Permissions.Permission.Login(String userName, String password, String system)
+   在 SWSystem.WebServices.Security.Permissions.Permission.FetchPermission(Object userID)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SWSystem.WebServices.Security.Permissions.Permission.FetchPermission(Object userID)
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServerPermission.Permission.FetchPermission(Object userID) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Web References\htfServerPermission\Reference.vb:行号 1840
+   在 MainInterface.MdlMain.setFormMenu(frmMainInterface frmMain) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\MdlMain1.vb:行号 266
+   在 MainInterface.FConsole.ShowMain(String status) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\FConsole.vb:行号 306
+----------------------
+2013/12/6 14:27:00
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：未找到相应记录!
+源表:workflow
+项目任务信息：
+----------------------
+2013/12/6 14:27:12
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：未找到相应记录!
+源表:workflow
+项目任务信息：
+----------------------
+2013/12/6 14:27:22
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：未找到相应记录!
+源表:workflow
+项目任务信息：
+----------------------
+2013/12/6 14:27:35
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：未找到相应记录!
+源表:workflow
+项目任务信息：
+----------------------
+2013/12/6 14:28:46
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：未找到相应记录!
+源表:workflow
+项目任务信息：
+----------------------
+2013/12/6 14:29:08
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：未找到相应记录!
+源表:workflow
+项目任务信息：
+----------------------
+2013/12/6 14:29:34
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：未找到相应记录!
+源表:workflow
+项目任务信息：
+----------------------
+2013/12/6 14:30:18
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：未找到相应记录!
+源表:workflow
+项目任务信息：
+----------------------
+2013/12/9 16:55:39
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Data
+错误消息：名为“ShowIncome”的列已属于此 DataTable。
+项目任务信息：   在 System.Data.DataColumnCollection.RegisterColumnName(String name, DataColumn column, DataTable table)
+   在 System.Data.DataColumnCollection.BaseAdd(DataColumn column)
+   在 System.Data.DataColumnCollection.AddAt(Int32 index, DataColumn column)
+   在 System.Data.DataColumnCollection.Add(String columnName, Type type, String expression)
+   在 MainInterface.frmBackFee.RemoveSomeRecord() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 275
+   在 MainInterface.frmBackFee.initializeAccountHandle() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 235
+   在 MainInterface.frmBackFee.FReturnGuaranteeFee_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 337
+----------------------
+2013/12/9 16:59:53
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Data
+错误消息：名为“ShowIncome”的列已属于此 DataTable。
+项目任务信息：   在 System.Data.DataColumnCollection.RegisterColumnName(String name, DataColumn column, DataTable table)
+   在 System.Data.DataColumnCollection.BaseAdd(DataColumn column)
+   在 System.Data.DataColumnCollection.AddAt(Int32 index, DataColumn column)
+   在 System.Data.DataColumnCollection.Add(String columnName, Type type, String expression)
+   在 MainInterface.frmBackFee.RemoveSomeRecord() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 275
+   在 MainInterface.frmBackFee.initializeAccountHandle() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 235
+   在 MainInterface.frmBackFee.FReturnGuaranteeFee_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 337
+----------------------
+2013/12/9 17:01:11
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Data
+错误消息：名为“ShowIncome”的列已属于此 DataTable。
+项目任务信息：   在 System.Data.DataColumnCollection.RegisterColumnName(String name, DataColumn column, DataTable table)
+   在 System.Data.DataColumnCollection.BaseAdd(DataColumn column)
+   在 System.Data.DataColumnCollection.AddAt(Int32 index, DataColumn column)
+   在 System.Data.DataColumnCollection.Add(String columnName, Type type, String expression)
+   在 MainInterface.frmBackFee.RemoveSomeRecord() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 275
+   在 MainInterface.frmBackFee.initializeAccountHandle() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 235
+   在 MainInterface.frmBackFee.FReturnGuaranteeFee_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 337
+----------------------
+2013/12/9 17:02:34
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Data
+错误消息：名为“ShowIncome”的列已属于此 DataTable。
+项目任务信息：   在 System.Data.DataColumnCollection.RegisterColumnName(String name, DataColumn column, DataTable table)
+   在 System.Data.DataColumnCollection.BaseAdd(DataColumn column)
+   在 System.Data.DataColumnCollection.AddAt(Int32 index, DataColumn column)
+   在 System.Data.DataColumnCollection.Add(String columnName, Type type, String expression)
+   在 MainInterface.frmBackFee.RemoveSomeRecord() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 275
+   在 MainInterface.frmBackFee.initializeAccountHandle() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 235
+   在 MainInterface.frmBackFee.FReturnGuaranteeFee_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 337
+----------------------
+2013/12/9 17:04:26
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Data
+错误消息：名为“ShowIncome”的列已属于此 DataTable。
+项目任务信息：   在 System.Data.DataColumnCollection.RegisterColumnName(String name, DataColumn column, DataTable table)
+   在 System.Data.DataColumnCollection.BaseAdd(DataColumn column)
+   在 System.Data.DataColumnCollection.AddAt(Int32 index, DataColumn column)
+   在 System.Data.DataColumnCollection.Add(String columnName, Type type, String expression)
+   在 MainInterface.frmBackFee.RemoveSomeRecord() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 275
+   在 MainInterface.frmBackFee.cmbxType_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 402
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   在 System.Windows.Forms.ComboBox.RefreshItems()
+   在 System.Windows.Forms.ListControl.SetDataConnection(Object newDataSource, BindingMemberInfo newDisplayMember, Boolean force)
+   在 System.Windows.Forms.ListControl.set_ValueMember(String value)
+   在 MainInterface.frmBackFee.initializeAccountHandle() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 234
+   在 MainInterface.frmBackFee.FReturnGuaranteeFee_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 337
+----------------------
+2013/12/9 17:05:19
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Data
+错误消息：名为“ShowIncome”的列已属于此 DataTable。
+项目任务信息：   在 System.Data.DataColumnCollection.RegisterColumnName(String name, DataColumn column, DataTable table)
+   在 System.Data.DataColumnCollection.BaseAdd(DataColumn column)
+   在 System.Data.DataColumnCollection.AddAt(Int32 index, DataColumn column)
+   在 System.Data.DataColumnCollection.Add(String columnName, Type type, String expression)
+   在 MainInterface.frmBackFee.RemoveSomeRecord() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 275
+   在 MainInterface.frmBackFee.cmbxType_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 402
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   在 System.Windows.Forms.ComboBox.RefreshItems()
+   在 System.Windows.Forms.ListControl.SetDataConnection(Object newDataSource, BindingMemberInfo newDisplayMember, Boolean force)
+   在 System.Windows.Forms.ListControl.set_ValueMember(String value)
+   在 MainInterface.frmBackFee.initializeAccountHandle() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 234
+   在 MainInterface.frmBackFee.FReturnGuaranteeFee_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 337
+----------------------
+2013/12/9 17:05:33
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Data
+错误消息：名为“ShowIncome”的列已属于此 DataTable。
+项目任务信息：   在 System.Data.DataColumnCollection.RegisterColumnName(String name, DataColumn column, DataTable table)
+   在 System.Data.DataColumnCollection.BaseAdd(DataColumn column)
+   在 System.Data.DataColumnCollection.AddAt(Int32 index, DataColumn column)
+   在 System.Data.DataColumnCollection.Add(String columnName, Type type, String expression)
+   在 MainInterface.frmBackFee.RemoveSomeRecord() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 275
+   在 MainInterface.frmBackFee.cmbxType_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 402
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   在 System.Windows.Forms.ComboBox.RefreshItems()
+   在 System.Windows.Forms.ListControl.SetDataConnection(Object newDataSource, BindingMemberInfo newDisplayMember, Boolean force)
+   在 System.Windows.Forms.ListControl.set_ValueMember(String value)
+   在 MainInterface.frmBackFee.initializeAccountHandle() 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 234
+   在 MainInterface.frmBackFee.FReturnGuaranteeFee_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005\MainInterface\Fee\frmBackFee.vb:行号 337
+----------------------
+2013/12/10 20:01:43
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.Data.SqlClient.SqlException: 找不到存储过程 'dbo.PFetchReferencia'。
+   在 WebService_CGMIS.Service1.GetReferencia(String ReferenciaNo) 位置 D:\担保业务系统\GmisServerSrc2005\WebService_CGMIS\App_Code\Service1.asmx.vb:行号 9258
+   --- 内部异常堆栈跟踪的结尾 ---
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetReferencia(String ReferenciaNo) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Web References\htfServer\Reference.vb:行号 2885
+   在 MainInterface.RemoteModule.get_ReferenciaDS() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\RemoteModule.vb:行号 208
+   在 MainInterface.frmRegisterCorporationInfo.bindingData() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\qxd\frmRegisterCorporationInfo.vb:行号 1677
+   在 MainInterface.frmRegisterCorporationInfo.frmRegisterCorporationInfo_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\qxd\frmRegisterCorporationInfo.vb:行号 1597
+----------------------
+2013/12/10 20:02:07
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.Data.SqlClient.SqlException: 找不到存储过程 'dbo.PFetchReferencia'。
+   在 WebService_CGMIS.Service1.GetReferencia(String ReferenciaNo) 位置 D:\担保业务系统\GmisServerSrc2005\WebService_CGMIS\App_Code\Service1.asmx.vb:行号 9258
+   --- 内部异常堆栈跟踪的结尾 ---
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetReferencia(String ReferenciaNo) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Web References\htfServer\Reference.vb:行号 2885
+   在 MainInterface.RemoteModule.get_ReferenciaDS() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\RemoteModule.vb:行号 208
+   在 MainInterface.frmRegisterCorporationInfo.bindingData() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\qxd\frmRegisterCorporationInfo.vb:行号 1677
+   在 MainInterface.frmRegisterCorporationInfo.frmRegisterCorporationInfo_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\qxd\frmRegisterCorporationInfo.vb:行号 1597
+----------------------
+2013/12/10 20:02:25
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.Data.SqlClient.SqlException: 找不到存储过程 'dbo.PFetchReferencia'。
+   在 WebService_CGMIS.Service1.GetReferencia(String ReferenciaNo) 位置 D:\担保业务系统\GmisServerSrc2005\WebService_CGMIS\App_Code\Service1.asmx.vb:行号 9258
+   --- 内部异常堆栈跟踪的结尾 ---
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetReferencia(String ReferenciaNo) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Web References\htfServer\Reference.vb:行号 2885
+   在 MainInterface.RemoteModule.get_ReferenciaDS() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\RemoteModule.vb:行号 208
+   在 MainInterface.frmRegisterCorporationInfo.bindingData() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\qxd\frmRegisterCorporationInfo.vb:行号 1677
+   在 MainInterface.frmRegisterCorporationInfo.frmRegisterCorporationInfo_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\qxd\frmRegisterCorporationInfo.vb:行号 1597
+----------------------
+2013/12/11 9:31:19
+系统错误
+发生无法预知的错误！
+
+错误来源：
+错误消息：列“referenciae_type”不属于表 corporation。
+项目任务信息：
+----------------------
+2013/12/11 9:32:08
+系统错误
+发生无法预知的错误！
+
+错误来源：
+错误消息：列“referenciae_type”不属于表 corporation。
+项目任务信息：
+----------------------
+2013/12/12 10:20:10
+系统错误
+发生无法预知的错误！
+
+错误来源：MainInterface
+错误消息：未将对象引用设置到对象的实例。
+项目任务信息：   在 MainInterface.frmCoMBase.GetProjectData() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmCoMBase.vb:行号 1766
+   在 MainInterface.frmCoMBase.GetData() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmCoMBase.vb:行号 1860
+   在 MainInterface.frmEvalTrial.EvalTrial_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmEvalTrial.vb:行号 802
+----------------------
+2013/12/12 10:22:10
+系统错误
+发生无法预知的错误！
+
+错误来源：MainInterface
+错误消息：未将对象引用设置到对象的实例。
+项目任务信息：   在 MainInterface.frmCoMBase.GetProjectData() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmCoMBase.vb:行号 1766
+   在 MainInterface.frmCoMBase.GetData() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmCoMBase.vb:行号 1860
+   在 MainInterface.frmEvalTrial.EvalTrial_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmEvalTrial.vb:行号 802
+----------------------
+2013/12/12 10:31:05
+系统错误
+发生无法预知的错误！
+
+错误来源：MainInterface
+错误消息：未将对象引用设置到对象的实例。
+项目任务信息：   在 MainInterface.frmCoMBase.GetProjectData() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmCoMBase.vb:行号 1766
+   在 MainInterface.frmCoMBase.GetData() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmCoMBase.vb:行号 1860
+   在 MainInterface.frmEvalTrial.EvalTrial_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmEvalTrial.vb:行号 802
+----------------------
+2013/12/12 10:31:35
+系统错误
+发生无法预知的错误！
+
+错误来源：MainInterface
+错误消息：未将对象引用设置到对象的实例。
+项目任务信息：   在 MainInterface.frmCoMBase.GetProjectData() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmCoMBase.vb:行号 1766
+   在 MainInterface.frmCoMBase.GetData() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmCoMBase.vb:行号 1860
+   在 MainInterface.frmEvalTrial.EvalTrial_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmEvalTrial.vb:行号 802
+----------------------
+2013/12/12 10:33:11
+系统错误
+发生无法预知的错误！
+
+错误来源：MainInterface
+错误消息：未将对象引用设置到对象的实例。
+项目任务信息：   在 MainInterface.frmCoMBase.GetProjectData() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmCoMBase.vb:行号 1766
+   在 MainInterface.frmCoMBase.GetData() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmCoMBase.vb:行号 1860
+   在 MainInterface.frmEvalTrial.EvalTrial_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmEvalTrial.vb:行号 802
+----------------------
+2013/12/19 11:21:50
+系统错误
+发生无法预知的错误！
+
+错误来源：保存失败
+错误消息：将截断字符串或二进制数据。
+语句已终止。
+项目任务信息：
+----------------------
+2013/12/19 11:22:38
+系统错误
+发生无法预知的错误！
+
+错误来源：保存失败
+错误消息：将截断字符串或二进制数据。
+语句已终止。
+项目任务信息：
+----------------------
+2013/12/19 11:23:18
+系统错误
+发生无法预知的错误！
+
+错误来源：保存失败
+错误消息：将截断字符串或二进制数据。
+语句已终止。
+项目任务信息：
+----------------------
+2013/12/24 9:44:44
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Data
+错误消息：在位置 1 处没有任何行。
+项目任务信息：   在 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   在 System.Data.RBTree`1.get_Item(Int32 index)
+   在 System.Data.DataRowCollection.get_Item(Int32 index)
+   在 MainInterface.FCheckMeetRecordUpdate.Save() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Fee\FCheckMeetRecordUpdate.vb:行号 435
+   在 MainInterface.FCheckMeetRecordUpdate.btnCommit_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Fee\FCheckMeetRecordUpdate.vb:行号 457
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 MainInterface.frmBasic.OpenApplyTool(String strProjectCode, String strCorpName, String strWorkFlowID, String strTaskID, Form frmOwner, String User, String taskName, String roleID) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\BasicClass\frmBasic.vb:行号 133
+----------------------
+2013/12/24 9:44:55
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Data
+错误消息：在位置 1 处没有任何行。
+项目任务信息：   在 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   在 System.Data.RBTree`1.get_Item(Int32 index)
+   在 System.Data.DataRowCollection.get_Item(Int32 index)
+   在 MainInterface.FCheckMeetRecordUpdate.Save() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Fee\FCheckMeetRecordUpdate.vb:行号 435
+   在 MainInterface.FCheckMeetRecordUpdate.btnCommit_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Fee\FCheckMeetRecordUpdate.vb:行号 457
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 MainInterface.frmBasic.OpenApplyTool(String strProjectCode, String strCorpName, String strWorkFlowID, String strTaskID, Form frmOwner, String User, String taskName, String roleID) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\BasicClass\frmBasic.vb:行号 133
+----------------------
+2013/12/24 9:47:06
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Data
+错误消息：在位置 1 处没有任何行。
+项目任务信息：   在 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   在 System.Data.RBTree`1.get_Item(Int32 index)
+   在 System.Data.DataRowCollection.get_Item(Int32 index)
+   在 MainInterface.FCheckMeetRecordUpdate.Save() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Fee\FCheckMeetRecordUpdate.vb:行号 435
+   在 MainInterface.FCheckMeetRecordUpdate.btnCommit_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Fee\FCheckMeetRecordUpdate.vb:行号 457
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 MainInterface.frmBasic.OpenApplyTool(String strProjectCode, String strCorpName, String strWorkFlowID, String strTaskID, Form frmOwner, String User, String taskName, String roleID) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\BasicClass\frmBasic.vb:行号 133
+----------------------
+2013/12/24 9:47:30
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Data
+错误消息：在位置 1 处没有任何行。
+项目任务信息：   在 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   在 System.Data.RBTree`1.get_Item(Int32 index)
+   在 System.Data.DataRowCollection.get_Item(Int32 index)
+   在 MainInterface.FCheckMeetRecordUpdate.Save() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Fee\FCheckMeetRecordUpdate.vb:行号 435
+   在 MainInterface.FCheckMeetRecordUpdate.btnCommit_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Fee\FCheckMeetRecordUpdate.vb:行号 457
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 MainInterface.frmBasic.OpenApplyTool(String strProjectCode, String strCorpName, String strWorkFlowID, String strTaskID, Form frmOwner, String User, String taskName, String roleID) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\BasicClass\frmBasic.vb:行号 133
+----------------------
+2013/12/24 9:52:48
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Data
+错误消息：在位置 1 处没有任何行。
+项目任务信息：   在 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   在 System.Data.RBTree`1.get_Item(Int32 index)
+   在 System.Data.DataRowCollection.get_Item(Int32 index)
+   在 MainInterface.FCheckMeetRecordUpdate.Save() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Fee\FCheckMeetRecordUpdate.vb:行号 435
+   在 MainInterface.FCheckMeetRecordUpdate.btnCommit_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Fee\FCheckMeetRecordUpdate.vb:行号 457
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 MainInterface.frmBasic.OpenApplyTool(String strProjectCode, String strCorpName, String strWorkFlowID, String strTaskID, Form frmOwner, String User, String taskName, String roleID) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\BasicClass\frmBasic.vb:行号 133
+----------------------
+2014/1/17 9:55:21
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：提交结果不满足业务规则!
+项目任务信息：确认项目终止报告
+----------------------
+2014/1/20 9:15:34
+系统错误
+发生无法预知的错误！
+
+错误来源：Interop.Word
+错误消息：向占位程序传送了空的索引指针。 (异常来自 HRESULT:0x800706F4)
+项目任务信息：   在 Word.Find.set_Format(Boolean prop)
+   在 MainInterface.frmDocumentManageBusiness.replaceText(ApplicationClass word1, String strFlag, String strReplace) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\qxd\frmDocumentManageBusiness.vb:行号 1318
+   在 MainInterface.frmDocumentManageBusiness.btnMakeDoc_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\qxd\frmDocumentManageBusiness.vb:行号 1166
+----------------------
+2014/1/20 9:15:45
+系统错误
+发生无法预知的错误！
+
+错误来源：Interop.Word
+错误消息：向占位程序传送了空的索引指针。 (异常来自 HRESULT:0x800706F4)
+项目任务信息：   在 Word.Find.set_Format(Boolean prop)
+   在 MainInterface.frmDocumentManageBusiness.replaceText(ApplicationClass word1, String strFlag, String strReplace) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\qxd\frmDocumentManageBusiness.vb:行号 1318
+   在 MainInterface.frmDocumentManageBusiness.btnMakeDoc_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\qxd\frmDocumentManageBusiness.vb:行号 1166
+----------------------
+2014/1/20 9:15:55
+系统错误
+发生无法预知的错误！
+
+错误来源：Interop.Word
+错误消息：向占位程序传送了空的索引指针。 (异常来自 HRESULT:0x800706F4)
+项目任务信息：   在 Word.Find.set_Format(Boolean prop)
+   在 MainInterface.frmDocumentManageBusiness.replaceText(ApplicationClass word1, String strFlag, String strReplace) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\qxd\frmDocumentManageBusiness.vb:行号 1318
+   在 MainInterface.frmDocumentManageBusiness.btnMakeDoc_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\qxd\frmDocumentManageBusiness.vb:行号 1166
+----------------------
+2014/1/20 9:15:58
+系统错误
+发生无法预知的错误！
+
+错误来源：Interop.Word
+错误消息：向占位程序传送了空的索引指针。 (异常来自 HRESULT:0x800706F4)
+项目任务信息：   在 Word.Find.set_Format(Boolean prop)
+   在 MainInterface.frmDocumentManageBusiness.replaceText(ApplicationClass word1, String strFlag, String strReplace) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\qxd\frmDocumentManageBusiness.vb:行号 1318
+   在 MainInterface.frmDocumentManageBusiness.btnMakeDoc_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\qxd\frmDocumentManageBusiness.vb:行号 1166
+----------------------
+2014/1/23 9:00:49
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Web.Services
+错误消息：服务器无法处理请求。 ---> 列名 'IsDisplay' 无效。
+列名 'sub_system' 无效。
+项目任务信息：   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 MainInterface.htfServer.Service1.GetCommonQueryInfo(String strSql) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Web References\htfServer\Reference.vb:行号 7186
+   在 MainInterface.FSplitProject.Refresh() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Fee\FSplitProject.vb:行号 148
+----------------------
+2014/1/23 9:16:13
+系统错误
+发生无法预知的错误！
+
+错误来源：System.Data
+错误消息：列“match_project_code”不属于表 project。
+项目任务信息：   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.set_Item(String columnName, Object value)
+   在 MainInterface.frmMeetingRecord.btnSplitProject_Click(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Fee\frmMeetingRecord.vb:行号 5165
+----------------------
+2014/1/23 9:17:39
+系统错误
+发生无法预知的错误！
+
+错误来源：拆分项目工作流失败
+错误消息：违反了 PRIMARY KEY 约束 'PK_project_task'。不能在对象 'dbo.project_task' 中插入重复键。
+语句已终止。
+项目任务信息：
+----------------------
+2014/1/23 9:22:05
+系统错误
+发生无法预知的错误！
+
+错误来源：拆分项目工作流失败
+错误消息：违反了 PRIMARY KEY 约束 'PK_project_task'。不能在对象 'dbo.project_task' 中插入重复键。
+语句已终止。
+项目任务信息：
+----------------------
+2014/1/23 9:24:48
+系统错误
+发生无法预知的错误！
+
+错误来源：拆分项目工作流失败
+错误消息：违反了 PRIMARY KEY 约束 'PK_project_task'。不能在对象 'dbo.project_task' 中插入重复键。
+语句已终止。
+项目任务信息：
+----------------------
+2014/1/23 9:26:12
+系统错误
+发生无法预知的错误！
+
+错误来源：拆分项目工作流失败
+错误消息：违反了 PRIMARY KEY 约束 'PK_project_task'。不能在对象 'dbo.project_task' 中插入重复键。
+语句已终止。
+项目任务信息：
+----------------------
+2014/1/23 9:27:21
+系统错误
+发生无法预知的错误！
+
+错误来源：拆分项目工作流失败
+错误消息：违反了 PRIMARY KEY 约束 'PK_project_task'。不能在对象 'dbo.project_task' 中插入重复键。
+语句已终止。
+项目任务信息：
+----------------------
+2014/1/24 16:01:40
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：提交结果不满足业务规则!
+项目任务信息：确认项目终止报告
+----------------------
+2014/1/24 16:04:48
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：提交结果不满足业务规则!
+项目任务信息：确认项目终止报告
+----------------------
+2014/1/24 16:06:58
+系统错误
+发生无法预知的错误！
+
+错误来源：提交失败
+错误消息：提交结果不满足业务规则!
+项目任务信息：确认项目终止报告
+----------------------
+2014/2/20 10:42:11
+系统错误
+发生无法预知的错误！
+
+错误来源：MainInterface
+错误消息：未将对象引用设置到对象的实例。
+项目任务信息：   在 MainInterface.frmCoMBase.GetProjectData() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmCoMBase.vb:行号 1766
+   在 MainInterface.frmCoMBase.GetData() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmCoMBase.vb:行号 1860
+   在 MainInterface.frmEvalTrial.EvalTrial_Load(Object sender, EventArgs e) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmEvalTrial.vb:行号 802
+----------------------
+2014/2/20 10:42:15
+系统错误
+发生无法预知的错误！
+
+错误来源：MainInterface
+错误消息：未将对象引用设置到对象的实例。
+项目任务信息：   在 MainInterface.frmCoMBase.CheckData() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmCoMBase.vb:行号 1943
+   在 MainInterface.frmCoMBase.Save() 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\Apply\frmCoMBase.vb:行号 1905
+----------------------
+2014/3/5 11:21:09
+系统错误
+发生无法预知的错误！
+
+错误来源：Interop.Excel
+错误消息：无效索引。 (异常来自 HRESULT:0x8002000B (DISP_E_BADINDEX))
+项目任务信息：   在 Excel.Sheets.get__Default(Object Index)
+   在 MainInterface.ReportToExcel.ToExcel(DataGrid dg, String filePath, String fileName, ArrayList array) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\qxd\ReportToExcel.vb:行号 206
+----------------------
+2014/3/5 11:21:50
+系统错误
+发生无法预知的错误！
+
+错误来源：Interop.Excel
+错误消息：无效索引。 (异常来自 HRESULT:0x8002000B (DISP_E_BADINDEX))
+项目任务信息：   在 Excel.Sheets.get__Default(Object Index)
+   在 MainInterface.ReportToExcel.ToExcel(DataGrid dg, String filePath, String fileName, ArrayList array) 位置 D:\担保业务系统\GmisClientSrc2005 - 副本\MainInterface\qxd\ReportToExcel.vb:行号 206
+----------------------
+2014/3/19 9:28:05
+系统错误
+发生无法预知的错误！
+
+错误来源：FBank.Update
+错误消息：对于不返回任何键列信息的 SelectCommand，不支持 UpdateCommand 的动态 SQL 生成。
+项目任务信息：
+----------------------
+2014/3/19 9:28:23
+系统错误
+发生无法预知的错误！
+
+错误来源：FBank.Update
+错误消息：对于不返回任何键列信息的 SelectCommand，不支持 UpdateCommand 的动态 SQL 生成。
+项目任务信息：
+----------------------
+2014/3/19 9:29:39
+系统错误
+发生无法预知的错误！
+
+错误来源：FBank.Update
+错误消息：对于不返回任何键列信息的 SelectCommand，不支持 UpdateCommand 的动态 SQL 生成。
+项目任务信息：
+----------------------
