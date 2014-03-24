@@ -1,0 +1,2307 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94A28A71-5621-4AC4-84DB-FE0A8083E348}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>MainInterface</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>MainInterface</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MainInterface.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MainInterface.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="irisskin, Version=2006.3.22.45, Culture=neutral">
+      <HintPath>dll\IrisSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="Money2String">
+      <Name>Money2String</Name>
+      <HintPath>dll\Money2String.dll</HintPath>
+    </Reference>
+    <Reference Include="Office">
+      <Name>office</Name>
+    </Reference>
+    <Reference Include="SWCalendar">
+      <Name>SWCalendar</Name>
+      <HintPath>dll\SWCalendar.dll</HintPath>
+    </Reference>
+    <Reference Include="SWSystem.Windows.Forms">
+      <Name>SWSystem.Windows.Forms</Name>
+      <HintPath>dll\SWSystem.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="SWSystem.XML">
+      <Name>SWSystem.XML</Name>
+      <HintPath>dll\SWSystem.XML.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Name>System.DirectoryServices</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Messaging">
+      <Name>system.messaging</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <ProjectReference Include="..\DocumentManager\DocumentManager.csproj">
+      <Name>DocumentManager</Name>
+      <Project>{A8D8A1FE-4FA7-49FF-8AF4-D69066CD34FC}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\SWDialogBox\SWDialogBox.csproj">
+      <Name>SWDialogBox</Name>
+      <Project>{A8468205-139D-4D49-A293-527C3B0FAE40}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\htfServerPermission\FixedRoleEnum.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\htfServerPermission\permission.disco" />
+    <None Include="Web References\htfServerPermission\permission.wsdl" />
+    <None Include="Web References\htfServerPermission\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\htfServer\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\htfServer\Service1.disco" />
+    <None Include="Web References\htfServer\Service1.wsdl" />
+    <Compile Include="Apply\CGModule.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Apply\FImportFinance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply\FReviewBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply\FReview_bh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply\FReview_xxbh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply\FReview_xxbh_approve.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply\FReview_xxbh_check.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply\FReview_zdb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply\frmCoMBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply\frmEvalTrial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply\frmFinanceManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply\frmFirstTrial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply\frmProjectCorpInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply\frmTrialFirstOpinionFinal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply\RemoteModule.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BasicClass\frmBasic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicClass\frmBasicProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicClass\frmProjectInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicClass\FRollbackReason.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\FContract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\frmCarContract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\frmChattelContract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\frmCommonContract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\frmEstateContract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\DataGridDateTimeColumn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fee\FAffirmCountercliam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FAffirmReturnSecurityFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FAffirmSecurityFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FAntiAssureCompanys.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FChargeFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FCheckMeetRecordUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FCheckProjectTraceInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FConfirmMeetRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FCopyGuaranteeCheckRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FPostConfigure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FQueryIntentLetter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FRegisterCounterclaim.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FRegisterDischargeInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FRegisterDischargeRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FReturnGuaranteeFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FReturnSecurityFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmAffirmFeeBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmAffirmGuarantFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmAffirmReviewFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmAfterVouchRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmArrangeSign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmAuditDelayPro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmBeforeVouchRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmChangeGuarantyFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmChargeFeeBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmChargeOverdueRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmCheckBank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmCheckRecordTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmCheckReviewFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmConfirmProjectDelay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmCorAssure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmCorAssureList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmGuarantFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmMeetingRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmMeetingRecordExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmMeetQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmMeetRecordQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmMeetSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmOverdueTrailRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmPersonAssure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmProjectAppraisement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmProjectReturnPlan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmProjectReturnPlanExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmRefundDebtInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmRefundDebtTrailRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmRegSig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmRegSigExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmReturnFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmReviewFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmSettleMeet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmSignJointlyAffirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmSigProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmSubmitTrialOpinion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmTraceInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmTrackPlan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmTuneUpOpinion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmUpdateGuarantyMeasure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmValidateProjectPlan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmValidateTrackPlan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmWorkLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FSecurityFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FServiceType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FShowOppGuaranteeDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FSignatureQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FSplitProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FUpdateMeetRecordApply.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FUserPost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FWorkLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FWorkLogConfigure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FWorkPeriod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\Money.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Office.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\frmLoanInterestFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmFinancingConsultingFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmAffirmFinancingConsultingRate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmRecordBankFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\frmBackFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee\FChargeBackFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMessageSender.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainInterface.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchCorporation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTaskList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FWaitingProcess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\FApplyIntentLetter_zdb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\FQueryProjectAppraise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\FRegisterLoanInfo_zdb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\frmBankReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\frmConfirmChangeManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\frmConfirmItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\frmConfirmVouchApplication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\frmConfirmVouchApplicationExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\frmEnterPriseIntent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\frmRequestVouchApplication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\frmSearchTrialInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\frmSignIntentLetter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\frmSignVouchApplication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\frmSignVouchApplicationExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\frmVouchApplication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\frmVouchApplicationExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\frmVouchReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\frmVouchReturnExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\FSignIntentLetter_zdb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\FViewAffirmContent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ht\FViewConfirmItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IApplyTool.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jianguan\frmOversee.Designer.vb">
+      <DependentUpon>frmOversee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="jianguan\frmOversee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jianguan\FrmOverseeFinanceInfo.Designer.vb">
+      <DependentUpon>FrmOverseeFinanceInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="jianguan\FrmOverseeFinanceInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jianguan\FrmOverseeVirtualProjectInfo.Designer.vb">
+      <DependentUpon>FrmOverseeVirtualProjectInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="jianguan\FrmOverseeVirtualProjectInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jianguan\SqlService.vb" />
+    <Compile Include="MdlGlobal.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MdlMain1.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="NoteBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\FQueryAfterGuaranteeRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\FQueryGetGuaranteeProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\FQueryStatisticsAssurance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\FQueryStatisticsCompensation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\FQueryStatisticsCounterGuarantee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\FQueryStatisticsMarketingA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\FQueryStatisticsMarketingB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\FQueryStatisticsMarketingC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\FQueryStatisticsPMService.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\FQueryStatisticsRegion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\FQueryStatisticsTradeRegion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\FQueryUnDealProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\frmGuaranteeCertificateAffirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\frmIsFirstLoanStat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\frmSuspendOpinionPaper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\FStatisticsFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other\FStatisticsRecommendProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\FChargeFeeTool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\FClaimTool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\FFirstReviewCancel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\FProjectExpandDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\FReMeeting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\FReviewGuarantee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\frmBaseWfDefine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\frmBaseWorkflow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\frmCancelConsignTask.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\frmCancelProcess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\frmConsignTask.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\frmHoliday.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\frmManualTask.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\frmReAssignAttendee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\frmSuspendProcess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\frmTaskDefine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\frmTaskRoleDefine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\frmTaskTransferDefine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\frmTimingTaskDefine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\FUpdateGuarantee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\FUpdateIntentLetter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\FUpdateMeetRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\FUpdateProcess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\Workflow.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="project\FChargeBackFeeTool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryAcceptProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryAllocateProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryChargeStatistics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryConsultation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryCreditProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryFirstProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryFirstTrialProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryGuaranteeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryGuarantingCorporation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryLoanProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryOppEvaluate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryPauseProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryPresentingProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryProcessingProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryProjectExpandDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryProjectRequite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryRecantProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryRegionProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryRequiteProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQuerySignProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\FQueryUnSignProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\frmMaturityProjectReview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\frmOverdueProjectQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\frmRefundDebtProjectQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\frmSearchBaseClass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query\frmTerminateProjectReview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\DataGridColor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="qxd\DataGridColoredBoolColumn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="qxd\DataGridColoredTextBoxColumn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="qxd\FAffirmEvaluateDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\FOppImportData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\FQueryEvaluaterTask.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmAcceptRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmAffirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmArchiveContractMeterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmArchiveMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmCompanyFileManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmCompanyFileQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmContractAffirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmCountersignAffirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmDefectRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmDefectRecordAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmDevolveOnProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmDocumentBill.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmDocumentClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="qxd\frmDocumentList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmDocumentManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmDocumentManageBusiness.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmDocumentParameter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmDocumentSystem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmEvaPerson.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmFlagContentClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="qxd\frmFraternityAffirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmImportDataToExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmInspectMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmInsuraceAffirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmLawTextAffirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmMakeContract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmMaterialAffirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmOppGuarantee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmOppGuaranteeAffirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmOppGuaranteeEvaluate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmOppGuaranteeRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmPledgeRegistryAffirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmPrehockAffirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmQueryAcceptRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmQueryBasic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmQueryCorporationInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmQueryCurrentTask.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmQueryDefectRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmQueryOppGuarantee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmRecommendAffirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmRegisterCorporationInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmRegistryAffirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmReviewContract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmTemplateManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\frmWardAffirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qxd\MaterialModule.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="qxd\ReportToExcel.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web References\htfServerPermission\Reference.vb">
+      <DependentUpon>Reference.map</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Web References\htfServer\Reference.vb">
+      <DependentUpon>Reference.map</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="xiaojun\FAssignLawer_bh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\FAssignLawer_ProjectDelay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\FAssignLawer_zdb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\FAssignPmBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\FAssignPm_BH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\FAssignPm_ZDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\FGuaranteeLetterApply.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\FGuaranteeLetterReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\FGuaranteeLetterSign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\FGuaranteeLetterTerminate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\FGuaranteeLetterTerminateConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\FRegisterProjectEndCaseInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\frmAssignationFirstChecker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\frmAssignationGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\frmAssignationLawManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\frmAssignationProjectManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\frmAssignFirstTask.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\frmBusinessBaseWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\frmCenCheckProjectTerminate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\frmDepCheckProjectTerminate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\frmFinancialCheckProjectTerminate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\frmFindProjectInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\frmOppGuaranteeQueryCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\frmProjectTerminate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\frmShowProjectInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\frmShowVouchRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\FSendMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaojun\FViewGuaranteeLetterUsage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\Configuration.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="zf\DataGridComboBoxColumn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="zf\ExceptionHandler.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="zf\FAlarm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FBank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FBaseData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FBranch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FConferenceRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FCooperateOrganization.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FCorporationType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FCorporatioRelationType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FCreditAppraiseQuality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FCreditAppraiseQuantity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FCreditAppraiseSystem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FCurrency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FDistrict.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FFinancialAnalysis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FGuaranteeLetterType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FGuarantyStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FIndustryType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FInvestForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FItem01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FItem02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FItem03.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FItem04.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FLoanChargeManner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FLoanForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FLoanProvideForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FLoanType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FMasterDetailDataForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FOppositeGuaranteeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FOrganization.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FPhase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FProjectCredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FProprietorshipType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FQueryStatisticsWorkLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FQueryWorkLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FRecommendType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FRefundType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FReimburseType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FRiskClass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FRole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FServiceTypeDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FStaffRole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FStatisticsWorkingHours.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FTeam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FTechnologyType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FTerminateType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\FWorkType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zf\IDataService.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Apply\FImportFinance.resx">
+      <DependentUpon>FImportFinance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apply\FReviewBase.resx">
+      <DependentUpon>FReviewBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apply\FReview_bh.resx">
+      <DependentUpon>FReview_bh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apply\FReview_xxbh.resx">
+      <DependentUpon>FReview_xxbh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apply\FReview_xxbh_approve.resx">
+      <DependentUpon>FReview_xxbh_approve.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apply\FReview_xxbh_check.resx">
+      <DependentUpon>FReview_xxbh_check.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apply\FReview_zdb.resx">
+      <DependentUpon>FReview_zdb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apply\frmCoMBase.resx">
+      <DependentUpon>frmCoMBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apply\frmEvalTrial.resx">
+      <DependentUpon>frmEvalTrial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apply\frmFinanceManage.resx">
+      <DependentUpon>frmFinanceManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apply\frmFirstTrial.resx">
+      <DependentUpon>frmFirstTrial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apply\frmProjectCorpInfo.resx">
+      <DependentUpon>frmProjectCorpInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apply\frmTrialFirstOpinionFinal.resx">
+      <DependentUpon>frmTrialFirstOpinionFinal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicClass\frmBasic.resx">
+      <DependentUpon>frmBasic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicClass\frmBasicProject.resx">
+      <DependentUpon>frmBasicProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicClass\frmProjectInfo.resx">
+      <DependentUpon>frmProjectInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicClass\FRollbackReason.resx">
+      <DependentUpon>FRollbackReason.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\FContract.resx">
+      <DependentUpon>FContract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\frmCarContract.resx">
+      <DependentUpon>frmCarContract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\frmChattelContract.resx">
+      <DependentUpon>frmChattelContract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\frmCommonContract.resx">
+      <DependentUpon>frmCommonContract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\frmEstateContract.resx">
+      <DependentUpon>frmEstateContract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsole.resx">
+      <DependentUpon>FConsole.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\DataGridDateTimeColumn.resx">
+      <DependentUpon>DataGridDateTimeColumn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FAffirmCountercliam.resx">
+      <DependentUpon>FAffirmCountercliam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FAffirmReturnSecurityFee.resx">
+      <DependentUpon>FAffirmReturnSecurityFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FAffirmSecurityFee.resx">
+      <DependentUpon>FAffirmSecurityFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FAntiAssureCompanys.resx">
+      <DependentUpon>FAntiAssureCompanys.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FChargeFee.resx">
+      <DependentUpon>FChargeFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FCheckMeetRecordUpdate.resx">
+      <DependentUpon>FCheckMeetRecordUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FCheckProjectTraceInfo.resx">
+      <DependentUpon>FCheckProjectTraceInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FConfirmMeetRecord.resx">
+      <DependentUpon>FConfirmMeetRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FCopyGuaranteeCheckRecord.resx">
+      <DependentUpon>FCopyGuaranteeCheckRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FPostConfigure.resx">
+      <DependentUpon>FPostConfigure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FQueryIntentLetter.resx">
+      <DependentUpon>FQueryIntentLetter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FRegisterCounterclaim.resx">
+      <DependentUpon>FRegisterCounterclaim.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FRegisterDischargeInfo.resx">
+      <DependentUpon>FRegisterDischargeInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FRegisterDischargeRecord.resx">
+      <DependentUpon>FRegisterDischargeRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FReturnGuaranteeFee.resx">
+      <DependentUpon>FReturnGuaranteeFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FReturnSecurityFee.resx">
+      <DependentUpon>FReturnSecurityFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmAffirmFeeBase.resx">
+      <DependentUpon>frmAffirmFeeBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmAffirmGuarantFee.resx">
+      <DependentUpon>frmAffirmGuarantFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmAffirmReviewFee.resx">
+      <DependentUpon>frmAffirmReviewFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmAfterVouchRecord.resx">
+      <DependentUpon>frmAfterVouchRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmArrangeSign.resx">
+      <DependentUpon>frmArrangeSign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmAuditDelayPro.resx">
+      <DependentUpon>frmAuditDelayPro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmBeforeVouchRecord.resx">
+      <DependentUpon>frmBeforeVouchRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmChangeGuarantyFee.resx">
+      <DependentUpon>frmChangeGuarantyFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmChargeFeeBase.resx">
+      <DependentUpon>frmChargeFeeBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmChargeOverdueRecord.resx">
+      <DependentUpon>frmChargeOverdueRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmCheckBank.resx">
+      <DependentUpon>frmCheckBank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmCheckRecordTable.resx">
+      <DependentUpon>frmCheckRecordTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmCheckReviewFee.resx">
+      <DependentUpon>frmCheckReviewFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmConfirmProjectDelay.resx">
+      <DependentUpon>frmConfirmProjectDelay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmCorAssure.resx">
+      <DependentUpon>frmCorAssure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmCorAssureList.resx">
+      <DependentUpon>frmCorAssureList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmGuarantFee.resx">
+      <DependentUpon>frmGuarantFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmMeetingRecord.resx">
+      <DependentUpon>frmMeetingRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmMeetingRecordExp.resx">
+      <DependentUpon>frmMeetingRecordExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmMeetQuery.resx">
+      <DependentUpon>frmMeetQuery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmMeetRecordQuery.resx">
+      <DependentUpon>frmMeetRecordQuery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmMeetSetup.resx">
+      <DependentUpon>frmMeetSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmOverdueTrailRecord.resx">
+      <DependentUpon>frmOverdueTrailRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmPersonAssure.resx">
+      <DependentUpon>frmPersonAssure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmProjectAppraisement.resx">
+      <DependentUpon>frmProjectAppraisement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmProjectReturnPlan.resx">
+      <DependentUpon>frmProjectReturnPlan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmProjectReturnPlanExp.resx">
+      <DependentUpon>frmProjectReturnPlanExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmRefundDebtInfo.resx">
+      <DependentUpon>frmRefundDebtInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmRefundDebtTrailRecord.resx">
+      <DependentUpon>frmRefundDebtTrailRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmRegSig.resx">
+      <DependentUpon>frmRegSig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmRegSigExp.resx">
+      <DependentUpon>frmRegSigExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmReturnFee.resx">
+      <DependentUpon>frmReturnFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmReviewFee.resx">
+      <DependentUpon>frmReviewFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmSettleMeet.resx">
+      <DependentUpon>frmSettleMeet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmSignJointlyAffirm.resx">
+      <DependentUpon>frmSignJointlyAffirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmSigProject.resx">
+      <DependentUpon>frmSigProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmSubmitTrialOpinion.resx">
+      <DependentUpon>frmSubmitTrialOpinion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmTraceInfo.resx">
+      <DependentUpon>frmTraceInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmTrackPlan.resx">
+      <DependentUpon>frmTrackPlan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmTuneUpOpinion.resx">
+      <DependentUpon>frmTuneUpOpinion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmUpdateGuarantyMeasure.resx">
+      <DependentUpon>frmUpdateGuarantyMeasure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmValidateProjectPlan.resx">
+      <DependentUpon>frmValidateProjectPlan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmValidateTrackPlan.resx">
+      <DependentUpon>frmValidateTrackPlan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmWorkLog.resx">
+      <DependentUpon>frmWorkLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FSecurityFee.resx">
+      <DependentUpon>FSecurityFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FServiceType.resx">
+      <DependentUpon>FServiceType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FShowOppGuaranteeDetail.resx">
+      <DependentUpon>FShowOppGuaranteeDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FSignatureQuery.resx">
+      <DependentUpon>FSignatureQuery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FSplitProject.resx">
+      <DependentUpon>FSplitProject.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FUpdateMeetRecordApply.resx">
+      <DependentUpon>FUpdateMeetRecordApply.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FUserPost.resx">
+      <DependentUpon>FUserPost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FWorkLog.resx">
+      <DependentUpon>FWorkLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FWorkLogConfigure.resx">
+      <DependentUpon>FWorkLogConfigure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FWorkPeriod.resx">
+      <DependentUpon>FWorkPeriod.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmLoanInterestFee.resx">
+      <DependentUpon>frmLoanInterestFee.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmFinancingConsultingFee.resx">
+      <DependentUpon>frmFinancingConsultingFee.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmAffirmFinancingConsultingRate.resx">
+      <DependentUpon>frmAffirmFinancingConsultingRate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmRecordBankFee.resx">
+      <DependentUpon>frmRecordBankFee.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\frmBackFee.resx">
+      <DependentUpon>frmBackFee.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee\FChargeBackFee.resx">
+      <DependentUpon>FChargeBackFee.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMessage.resx">
+      <DependentUpon>FMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMessageSender.resx">
+      <DependentUpon>FMessageSender.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainInterface.resx">
+      <DependentUpon>frmMainInterface.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchCorporation.resx">
+      <DependentUpon>frmSearchCorporation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTaskList.resx">
+      <DependentUpon>FTaskList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FWaitingProcess.resx">
+      <DependentUpon>FWaitingProcess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\FApplyIntentLetter_zdb.resx">
+      <DependentUpon>FApplyIntentLetter_zdb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\FQueryProjectAppraise.resx">
+      <DependentUpon>FQueryProjectAppraise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\FRegisterLoanInfo_zdb.resx">
+      <DependentUpon>FRegisterLoanInfo_zdb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\frmBankReturn.resx">
+      <DependentUpon>frmBankReturn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\frmConfirmChangeManager.resx">
+      <DependentUpon>frmConfirmChangeManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\frmConfirmItem.resx">
+      <DependentUpon>frmConfirmItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\frmConfirmVouchApplication.resx">
+      <DependentUpon>frmConfirmVouchApplication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\frmConfirmVouchApplicationExp.resx">
+      <DependentUpon>frmConfirmVouchApplicationExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\frmEnterPriseIntent.resx">
+      <DependentUpon>frmEnterPriseIntent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\frmRequestVouchApplication.resx">
+      <DependentUpon>frmRequestVouchApplication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\frmSearchTrialInfo.resx">
+      <DependentUpon>frmSearchTrialInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\frmSignIntentLetter.resx">
+      <DependentUpon>frmSignIntentLetter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\frmSignVouchApplication.resx">
+      <DependentUpon>frmSignVouchApplication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\frmSignVouchApplicationExp.resx">
+      <DependentUpon>frmSignVouchApplicationExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\frmVouchApplication.resx">
+      <DependentUpon>frmVouchApplication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\frmVouchApplicationExp.resx">
+      <DependentUpon>frmVouchApplicationExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\frmVouchReturn.resx">
+      <DependentUpon>frmVouchReturn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\frmVouchReturnExp.resx">
+      <DependentUpon>frmVouchReturnExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\FSignIntentLetter_zdb.resx">
+      <DependentUpon>FSignIntentLetter_zdb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\FViewAffirmContent.resx">
+      <DependentUpon>FViewAffirmContent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ht\FViewConfirmItem.resx">
+      <DependentUpon>FViewConfirmItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jianguan\frmOversee.resx">
+      <DependentUpon>frmOversee.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jianguan\FrmOverseeFinanceInfo.resx">
+      <DependentUpon>FrmOverseeFinanceInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jianguan\FrmOverseeVirtualProjectInfo.resx">
+      <DependentUpon>FrmOverseeVirtualProjectInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoteBox.resx">
+      <DependentUpon>NoteBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\FQueryAfterGuaranteeRecord.resx">
+      <DependentUpon>FQueryAfterGuaranteeRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\FQueryGetGuaranteeProject.resx">
+      <DependentUpon>FQueryGetGuaranteeProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\FQueryStatisticsAssurance.resx">
+      <DependentUpon>FQueryStatisticsAssurance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\FQueryStatisticsCompensation.resx">
+      <DependentUpon>FQueryStatisticsCompensation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\FQueryStatisticsCounterGuarantee.resx">
+      <DependentUpon>FQueryStatisticsCounterGuarantee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\FQueryStatisticsMarketingA.resx">
+      <DependentUpon>FQueryStatisticsMarketingA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\FQueryStatisticsMarketingB.resx">
+      <DependentUpon>FQueryStatisticsMarketingB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\FQueryStatisticsMarketingC.resx">
+      <DependentUpon>FQueryStatisticsMarketingC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\FQueryStatisticsPMService.resx">
+      <DependentUpon>FQueryStatisticsPMService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\FQueryStatisticsRegion.resx">
+      <DependentUpon>FQueryStatisticsRegion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\FQueryStatisticsTradeRegion.resx">
+      <DependentUpon>FQueryStatisticsTradeRegion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\FQueryUnDealProject.resx">
+      <DependentUpon>FQueryUnDealProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\frmGuaranteeCertificateAffirm.resx">
+      <DependentUpon>frmGuaranteeCertificateAffirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\frmIsFirstLoanStat.resx">
+      <DependentUpon>frmIsFirstLoanStat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\frmSuspendOpinionPaper.resx">
+      <DependentUpon>frmSuspendOpinionPaper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\FStatisticsFee.resx">
+      <DependentUpon>FStatisticsFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other\FStatisticsRecommendProject.resx">
+      <DependentUpon>FStatisticsRecommendProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\FChargeFeeTool.resx">
+      <DependentUpon>FChargeFeeTool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\FClaimTool.resx">
+      <DependentUpon>FClaimTool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\FFirstReviewCancel.resx">
+      <DependentUpon>FFirstReviewCancel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\FProjectExpandDate.resx">
+      <DependentUpon>FProjectExpandDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\FReMeeting.resx">
+      <DependentUpon>FReMeeting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\FReviewGuarantee.resx">
+      <DependentUpon>FReviewGuarantee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\frmBaseWfDefine.resx">
+      <DependentUpon>frmBaseWfDefine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\frmBaseWorkflow.resx">
+      <DependentUpon>frmBaseWorkflow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\frmCancelConsignTask.resx">
+      <DependentUpon>frmCancelConsignTask.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\frmCancelProcess.resx">
+      <DependentUpon>frmCancelProcess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\frmConsignTask.resx">
+      <DependentUpon>frmConsignTask.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\frmHoliday.resx">
+      <DependentUpon>frmHoliday.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\frmManualTask.resx">
+      <DependentUpon>frmManualTask.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\frmReAssignAttendee.resx">
+      <DependentUpon>frmReAssignAttendee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\frmSuspendProcess.resx">
+      <DependentUpon>frmSuspendProcess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\frmTaskDefine.resx">
+      <DependentUpon>frmTaskDefine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\frmTaskRoleDefine.resx">
+      <DependentUpon>frmTaskRoleDefine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\frmTaskTransferDefine.resx">
+      <DependentUpon>frmTaskTransferDefine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\frmTimingTaskDefine.resx">
+      <DependentUpon>frmTimingTaskDefine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\FUpdateGuarantee.resx">
+      <DependentUpon>FUpdateGuarantee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\FUpdateIntentLetter.resx">
+      <DependentUpon>FUpdateIntentLetter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\FUpdateMeetRecord.resx">
+      <DependentUpon>FUpdateMeetRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\FUpdateProcess.resx">
+      <DependentUpon>FUpdateProcess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\FChargeBackFeeTool.resx">
+      <DependentUpon>FChargeBackFeeTool.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryAcceptProject.resx">
+      <DependentUpon>FQueryAcceptProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryAllocateProject.resx">
+      <DependentUpon>FQueryAllocateProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryBase.resx">
+      <DependentUpon>FQueryBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryChargeStatistics.resx">
+      <DependentUpon>FQueryChargeStatistics.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryConsultation.resx">
+      <DependentUpon>FQueryConsultation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryCreditProject.resx">
+      <DependentUpon>FQueryCreditProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryFirstProject.resx">
+      <DependentUpon>FQueryFirstProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryFirstTrialProject.resx">
+      <DependentUpon>FQueryFirstTrialProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryGuaranteeForm.resx">
+      <DependentUpon>FQueryGuaranteeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryGuarantingCorporation.resx">
+      <DependentUpon>FQueryGuarantingCorporation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryLoanProject.resx">
+      <DependentUpon>FQueryLoanProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryOppEvaluate.resx">
+      <DependentUpon>FQueryOppEvaluate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryPauseProject.resx">
+      <DependentUpon>FQueryPauseProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryPresentingProject.resx">
+      <DependentUpon>FQueryPresentingProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryProcessingProject.resx">
+      <DependentUpon>FQueryProcessingProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryProjectExpandDate.resx">
+      <DependentUpon>FQueryProjectExpandDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryProjectRequite.resx">
+      <DependentUpon>FQueryProjectRequite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryRecantProject.resx">
+      <DependentUpon>FQueryRecantProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryRegionProject.resx">
+      <DependentUpon>FQueryRegionProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryRequiteProject.resx">
+      <DependentUpon>FQueryRequiteProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQuerySignProject.resx">
+      <DependentUpon>FQuerySignProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\FQueryUnSignProject.resx">
+      <DependentUpon>FQueryUnSignProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\frmMaturityProjectReview.resx">
+      <DependentUpon>frmMaturityProjectReview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\frmOverdueProjectQuery.resx">
+      <DependentUpon>frmOverdueProjectQuery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\frmRefundDebtProjectQuery.resx">
+      <DependentUpon>frmRefundDebtProjectQuery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\frmSearchBaseClass.resx">
+      <DependentUpon>frmSearchBaseClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query\frmTerminateProjectReview.resx">
+      <DependentUpon>frmTerminateProjectReview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\DataGridColor.resx">
+      <DependentUpon>DataGridColor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\DataGridColoredBoolColumn.resx">
+      <DependentUpon>DataGridColoredBoolColumn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\DataGridColoredTextBoxColumn.resx">
+      <DependentUpon>DataGridColoredTextBoxColumn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\FAffirmEvaluateDate.resx">
+      <DependentUpon>FAffirmEvaluateDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\FOppImportData.resx">
+      <DependentUpon>FOppImportData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\FQueryEvaluaterTask.resx">
+      <DependentUpon>FQueryEvaluaterTask.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmAcceptRequest.resx">
+      <DependentUpon>frmAcceptRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmAffirm.resx">
+      <DependentUpon>frmAffirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmArchiveContractMeterial.resx">
+      <DependentUpon>frmArchiveContractMeterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmArchiveMaterial.resx">
+      <DependentUpon>frmArchiveMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmCompanyFileManage.resx">
+      <DependentUpon>frmCompanyFileManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmCompanyFileQuery.resx">
+      <DependentUpon>frmCompanyFileQuery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmContractAffirm.resx">
+      <DependentUpon>frmContractAffirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmCountersignAffirm.resx">
+      <DependentUpon>frmCountersignAffirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmDefectRecord.resx">
+      <DependentUpon>frmDefectRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmDefectRecordAdd.resx">
+      <DependentUpon>frmDefectRecordAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmDevolveOnProject.resx">
+      <DependentUpon>frmDevolveOnProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmDocumentBill.resx">
+      <DependentUpon>frmDocumentBill.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmDocumentList.resx">
+      <DependentUpon>frmDocumentList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmDocumentManage.resx">
+      <DependentUpon>frmDocumentManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmDocumentManageBusiness.resx">
+      <DependentUpon>frmDocumentManageBusiness.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmDocumentParameter.resx">
+      <DependentUpon>frmDocumentParameter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmDocumentSystem.resx">
+      <DependentUpon>frmDocumentSystem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmEvaPerson.resx">
+      <DependentUpon>frmEvaPerson.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmFraternityAffirm.resx">
+      <DependentUpon>frmFraternityAffirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmImportDataToExcel.resx">
+      <DependentUpon>frmImportDataToExcel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmInspectMaterial.resx">
+      <DependentUpon>frmInspectMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmInsuraceAffirm.resx">
+      <DependentUpon>frmInsuraceAffirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmLawTextAffirm.resx">
+      <DependentUpon>frmLawTextAffirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmMakeContract.resx">
+      <DependentUpon>frmMakeContract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmMaterial.resx">
+      <DependentUpon>frmMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmMaterialAffirm.resx">
+      <DependentUpon>frmMaterialAffirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmOppGuarantee.resx">
+      <DependentUpon>frmOppGuarantee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmOppGuaranteeAffirm.resx">
+      <DependentUpon>frmOppGuaranteeAffirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmOppGuaranteeEvaluate.resx">
+      <DependentUpon>frmOppGuaranteeEvaluate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmOppGuaranteeRegister.resx">
+      <DependentUpon>frmOppGuaranteeRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmPledgeRegistryAffirm.resx">
+      <DependentUpon>frmPledgeRegistryAffirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmPrehockAffirm.resx">
+      <DependentUpon>frmPrehockAffirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmQueryAcceptRequest.resx">
+      <DependentUpon>frmQueryAcceptRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmQueryBasic.resx">
+      <DependentUpon>frmQueryBasic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmQueryCorporationInfo.resx">
+      <DependentUpon>frmQueryCorporationInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmQueryCurrentTask.resx">
+      <DependentUpon>frmQueryCurrentTask.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmQueryDefectRecord.resx">
+      <DependentUpon>frmQueryDefectRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmQueryOppGuarantee.resx">
+      <DependentUpon>frmQueryOppGuarantee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmRecommendAffirm.resx">
+      <DependentUpon>frmRecommendAffirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmRegisterCorporationInfo.resx">
+      <DependentUpon>frmRegisterCorporationInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmRegistryAffirm.resx">
+      <DependentUpon>frmRegistryAffirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmReviewContract.resx">
+      <DependentUpon>frmReviewContract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmTemplateManage.resx">
+      <DependentUpon>frmTemplateManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qxd\frmWardAffirm.resx">
+      <DependentUpon>frmWardAffirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\FAssignLawer_bh.resx">
+      <DependentUpon>FAssignLawer_bh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\FAssignLawer_ProjectDelay.resx">
+      <DependentUpon>FAssignLawer_ProjectDelay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\FAssignLawer_zdb.resx">
+      <DependentUpon>FAssignLawer_zdb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\FAssignPmBase.resx">
+      <DependentUpon>FAssignPmBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\FAssignPm_BH.resx">
+      <DependentUpon>FAssignPm_BH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\FAssignPm_ZDB.resx">
+      <DependentUpon>FAssignPm_ZDB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\FGuaranteeLetterApply.resx">
+      <DependentUpon>FGuaranteeLetterApply.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\FGuaranteeLetterReturn.resx">
+      <DependentUpon>FGuaranteeLetterReturn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\FGuaranteeLetterSign.resx">
+      <DependentUpon>FGuaranteeLetterSign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\FGuaranteeLetterTerminate.resx">
+      <DependentUpon>FGuaranteeLetterTerminate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\FGuaranteeLetterTerminateConfirm.resx">
+      <DependentUpon>FGuaranteeLetterTerminateConfirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\FRegisterProjectEndCaseInfo.resx">
+      <DependentUpon>FRegisterProjectEndCaseInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\frmAssignationFirstChecker.resx">
+      <DependentUpon>frmAssignationFirstChecker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\frmAssignationGroup.resx">
+      <DependentUpon>frmAssignationGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\frmAssignationLawManager.resx">
+      <DependentUpon>frmAssignationLawManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\frmAssignationProjectManager.resx">
+      <DependentUpon>frmAssignationProjectManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\frmAssignFirstTask.resx">
+      <DependentUpon>frmAssignFirstTask.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\frmBusinessBaseWin.resx">
+      <DependentUpon>frmBusinessBaseWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\frmCenCheckProjectTerminate.resx">
+      <DependentUpon>frmCenCheckProjectTerminate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\frmDepCheckProjectTerminate.resx">
+      <DependentUpon>frmDepCheckProjectTerminate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\frmFinancialCheckProjectTerminate.resx">
+      <DependentUpon>frmFinancialCheckProjectTerminate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\frmFindProjectInfo.resx">
+      <DependentUpon>frmFindProjectInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\frmOppGuaranteeQueryCheck.resx">
+      <DependentUpon>frmOppGuaranteeQueryCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\frmProjectTerminate.resx">
+      <DependentUpon>frmProjectTerminate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\frmShowProjectInfo.resx">
+      <DependentUpon>frmShowProjectInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\frmShowVouchRecord.resx">
+      <DependentUpon>frmShowVouchRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\FSendMessage.resx">
+      <DependentUpon>FSendMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaojun\FViewGuaranteeLetterUsage.resx">
+      <DependentUpon>FViewGuaranteeLetterUsage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\DataGridComboBoxColumn.resx">
+      <DependentUpon>DataGridComboBoxColumn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FAlarm.resx">
+      <DependentUpon>FAlarm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FBank.resx">
+      <DependentUpon>FBank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FBaseData.resx">
+      <DependentUpon>FBaseData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FBranch.resx">
+      <DependentUpon>FBranch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FConferenceRoom.resx">
+      <DependentUpon>FConferenceRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FCooperateOrganization.resx">
+      <DependentUpon>FCooperateOrganization.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FCorporationType.resx">
+      <DependentUpon>FCorporationType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FCorporatioRelationType.resx">
+      <DependentUpon>FCorporatioRelationType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FCreditAppraiseQuality.resx">
+      <DependentUpon>FCreditAppraiseQuality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FCreditAppraiseQuantity.resx">
+      <DependentUpon>FCreditAppraiseQuantity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FCreditAppraiseSystem.resx">
+      <DependentUpon>FCreditAppraiseSystem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FCurrency.resx">
+      <DependentUpon>FCurrency.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FDistrict.resx">
+      <DependentUpon>FDistrict.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FFinancialAnalysis.resx">
+      <DependentUpon>FFinancialAnalysis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FGuaranteeLetterType.resx">
+      <DependentUpon>FGuaranteeLetterType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FGuarantyStatus.resx">
+      <DependentUpon>FGuarantyStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FIndustryType.resx">
+      <DependentUpon>FIndustryType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FInvestForm.resx">
+      <DependentUpon>FInvestForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FItem.resx">
+      <DependentUpon>FItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FItem01.resx">
+      <DependentUpon>FItem01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FItem02.resx">
+      <DependentUpon>FItem02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FItem03.resx">
+      <DependentUpon>FItem03.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FItem04.resx">
+      <DependentUpon>FItem04.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FLoanChargeManner.resx">
+      <DependentUpon>FLoanChargeManner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FLoanForm.resx">
+      <DependentUpon>FLoanForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FLoanProvideForm.resx">
+      <DependentUpon>FLoanProvideForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FLoanType.resx">
+      <DependentUpon>FLoanType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FMasterDetailDataForm.resx">
+      <DependentUpon>FMasterDetailDataForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FMaterial.resx">
+      <DependentUpon>FMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FOppositeGuaranteeForm.resx">
+      <DependentUpon>FOppositeGuaranteeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FOrganization.resx">
+      <DependentUpon>FOrganization.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FPassword.resx">
+      <DependentUpon>FPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FPhase.resx">
+      <DependentUpon>FPhase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FProject.resx">
+      <DependentUpon>FProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FProjectCredit.resx">
+      <DependentUpon>FProjectCredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FProprietorshipType.resx">
+      <DependentUpon>FProprietorshipType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FQueryStatisticsWorkLog.resx">
+      <DependentUpon>FQueryStatisticsWorkLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FQueryWorkLog.resx">
+      <DependentUpon>FQueryWorkLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FRecommendType.resx">
+      <DependentUpon>FRecommendType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FRefundType.resx">
+      <DependentUpon>FRefundType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FReimburseType.resx">
+      <DependentUpon>FReimburseType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FRiskClass.resx">
+      <DependentUpon>FRiskClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FRole.resx">
+      <DependentUpon>FRole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FServiceTypeDialog.resx">
+      <DependentUpon>FServiceTypeDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FStaff.resx">
+      <DependentUpon>FStaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FStaffRole.resx">
+      <DependentUpon>FStaffRole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FStatisticsWorkingHours.resx">
+      <DependentUpon>FStatisticsWorkingHours.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FTeam.resx">
+      <DependentUpon>FTeam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FTechnologyType.resx">
+      <DependentUpon>FTechnologyType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FTerminateType.resx">
+      <DependentUpon>FTerminateType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zf\FWorkType.resx">
+      <DependentUpon>FWorkType.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="dll\IrisSkin.dll" />
+    <Content Include="dll\Money2String.dll" />
+    <Content Include="dll\SWCalendar.dll" />
+    <Content Include="dll\SWDialogBox.dll" />
+    <Content Include="dll\SWSystem.Windows.Forms.dll" />
+    <Content Include="dll\SWSystem.XML.dll" />
+    <Content Include="Logo.ico" />
+    <WebReferenceUrl Include="http://localhost/webservice_cgmis/permission.asmx">
+      <RelPath>Web References\htfServerPermission\</RelPath>
+      <UrlBehavior>Static</UrlBehavior>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8000/WebService_CGMIS/Service1.asmx">
+      <RelPath>Web References\htfServer\</RelPath>
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <UpdateFromURL>http://localhost:8000/WebService_CGMIS/Service1.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MainInterface_htfServer_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pawn\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

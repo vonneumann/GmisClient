@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MainInterface", "MainInterface.vbproj", "{94A28A71-5621-4AC4-84DB-FE0A8083E348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentManager", "..\..\Component\DocumentManager\DocumentManager.csproj", "{F9E36A76-94BE-4483-8255-C7A9A32BECAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{94A28A71-5621-4AC4-84DB-FE0A8083E348}.Debug.ActiveCfg = Debug|.NET
+		{94A28A71-5621-4AC4-84DB-FE0A8083E348}.Debug.Build.0 = Debug|.NET
+		{94A28A71-5621-4AC4-84DB-FE0A8083E348}.Release.ActiveCfg = Release|.NET
+		{94A28A71-5621-4AC4-84DB-FE0A8083E348}.Release.Build.0 = Release|.NET
+		{F9E36A76-94BE-4483-8255-C7A9A32BECAC}.Debug.ActiveCfg = Debug|.NET
+		{F9E36A76-94BE-4483-8255-C7A9A32BECAC}.Debug.Build.0 = Debug|.NET
+		{F9E36A76-94BE-4483-8255-C7A9A32BECAC}.Release.ActiveCfg = Release|.NET
+		{F9E36A76-94BE-4483-8255-C7A9A32BECAC}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

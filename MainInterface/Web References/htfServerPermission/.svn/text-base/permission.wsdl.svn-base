@@ -1,0 +1,2809 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://iLOOK100.net/WebServices/Permission" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://iLOOK100.net/WebServices/Permission" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://iLOOK100.net/WebServices/Permission">
+      <s:import namespace="http://www.w3.org/2001/XMLSchema" />
+      <s:element name="LoginByAuthenticationHeader">
+        <s:complexType />
+      </s:element>
+      <s:element name="LoginByAuthenticationHeaderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoginByAuthenticationHeaderResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenticationHeader" type="s0:AuthenticationHeader" />
+      <s:complexType name="AuthenticationHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="System" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoginResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="system" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoginExResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Logout">
+        <s:complexType />
+      </s:element>
+      <s:element name="LogoutResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Exists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExistsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsLogin">
+        <s:complexType />
+      </s:element>
+      <s:element name="IsLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsLoginResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsFixed">
+        <s:complexType />
+      </s:element>
+      <s:element name="IsFixedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsFixedResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsFixed_1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsFixed_1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsFixed_1Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsFixed_2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsFixed_2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsFixed_2Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsFixed_3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fixedID" type="s0:FixedRoleEnum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="FixedRoleEnum">
+        <s:list>
+          <s:simpleType>
+            <s:restriction base="s:string">
+              <s:enumeration value="Administrator" />
+              <s:enumeration value="Administrators" />
+              <s:enumeration value="Authors" />
+              <s:enumeration value="Readers" />
+              <s:enumeration value="Security" />
+              <s:enumeration value="Setting" />
+            </s:restriction>
+          </s:simpleType>
+        </s:list>
+      </s:simpleType>
+      <s:element name="IsFixed_3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsFixed_3Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsFixed_4">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="fixedID" type="s0:FixedRoleEnum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsFixed_4Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsFixed_4Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsFixed_5">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="fixedID" type="s0:FixedRoleEnum" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsFixed_5Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsFixed_5Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VerifyLoginResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyLoginEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="system" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyLoginExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VerifyLoginExResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="roleID" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="createDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddMemberResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMember_1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="roleID" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMember_1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddMember_1Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddRole">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fullName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="masterNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="createDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddRoleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddRoleResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fullName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="masterNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="createDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="firstChange" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="canotChange" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="accountAlway" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="accountPause" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddUserResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFixedID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFixedIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetFixedIDResult" type="s0:FixedRoleEnum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFixedID_1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFixedID_1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetFixedID_1Result" type="s0:FixedRoleEnum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFixedID_2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFixedID_2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetFixedID_2Result" type="s0:FixedRoleEnum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFixedID_3">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetFixedID_3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetFixedID_3Result" type="s0:FixedRoleEnum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserID_Current">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUserID_CurrentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetUserID_CurrentResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetUserIDResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfoAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUserInfoAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserInfoAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="direction" type="s0:DirectionEnum" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="DirectionEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="UpSearch" />
+          <s:enumeration value="DownSearch" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMemberResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRolesAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetRolesAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRolesAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRoles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRolesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRolesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsersAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUsersAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUsersAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="roleID" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUsersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermissionAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="FetchPermissionAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchPermissionAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="protect" type="s0:ProtectEnum" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="ProtectEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="RevokeProtect" />
+          <s:enumeration value="GrantProtect" />
+          <s:enumeration value="DenyProtect" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="FetchPermission_1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchPermission_1Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="protect" type="s0:ProtectEnum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchPermission_2Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchPermission_3Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_4">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_4Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchPermission_4Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_5">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="formID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="protect" type="s0:ProtectEnum" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_5Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchPermission_5Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_6">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="formID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="protect" type="s0:ProtectEnum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_6Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchPermission_6Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_7">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="formID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_7Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchPermission_7Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_8">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="formID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_8Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchPermission_8Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_9">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="formID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="protect" type="s0:ProtectEnum" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_9Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchPermission_9Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_10">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="formID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="protect" type="s0:ProtectEnum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_10Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchPermission_10Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_11">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="formID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchPermission_11Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchPermission_11Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermission_1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="formID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="protect" type="s0:ProtectEnum" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermission_1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPermission_1Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermission_2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="formID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="protect" type="s0:ProtectEnum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermission_2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPermission_2Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermission_3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="formID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermission_3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPermission_3Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermission_4">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="formID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermission_4Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPermission_4Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermissionSetAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPermissionSetAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPermissionSetAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermissionSet_1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="protect" type="s0:ProtectEnum" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermissionSet_1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPermissionSet_1Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermissionSet_2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="protect" type="s0:ProtectEnum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermissionSet_2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPermissionSet_2Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermissionSet_3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermissionSet_3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPermissionSet_3Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermissionSet_4">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermissionSet_4Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPermissionSet_4Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTopmost">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTopmostResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTopmostResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveMemberAll">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="roleID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveMemberAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RemoveMemberAllResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="roleID" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RemoveMemberResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RemoveUserResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="newPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetPasswordResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPasswordCurrent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="newPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPasswordCurrentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetPasswordCurrentResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePermission">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="permissionDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePermissionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatePermissionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPermission">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="permission" type="s0:PermissionEnum" />
+            <s:element minOccurs="1" maxOccurs="1" name="formID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="protect" type="s0:ProtectEnum" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="PermissionEnum">
+        <s:list>
+          <s:simpleType>
+            <s:restriction base="s:string">
+              <s:enumeration value="FetchPermission" />
+              <s:enumeration value="AddNewPermission" />
+              <s:enumeration value="UpdatePermission" />
+              <s:enumeration value="DeletePermission" />
+              <s:enumeration value="PrintPermission" />
+              <s:enumeration value="FlowPermission" />
+              <s:enumeration value="VoidPermission" />
+            </s:restriction>
+          </s:simpleType>
+        </s:list>
+      </s:simpleType>
+      <s:element name="SetPermissionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetPermissionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPermissionCurrent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="permission" type="s0:PermissionEnum" />
+            <s:element minOccurs="1" maxOccurs="1" name="formID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="protect" type="s0:ProtectEnum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPermissionCurrentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetPermissionCurrentResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="oldName" />
+            <s:element minOccurs="0" maxOccurs="1" name="newName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fullName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="masterNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="firstChange" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="canotChange" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="accountAlway" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="accountPause" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetUserInfoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserInfoSimple">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="oldName" />
+            <s:element minOccurs="0" maxOccurs="1" name="newName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fullName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="masterNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserInfoSimpleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetUserInfoSimpleResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchFormAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="FetchFormAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchFormAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchForm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="formID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchFormResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchFormResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </types>
+  <message name="LoginByAuthenticationHeaderSoapIn">
+    <part name="parameters" element="s0:LoginByAuthenticationHeader" />
+  </message>
+  <message name="LoginByAuthenticationHeaderSoapOut">
+    <part name="parameters" element="s0:LoginByAuthenticationHeaderResponse" />
+  </message>
+  <message name="LoginByAuthenticationHeaderAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="LoginSoapIn">
+    <part name="parameters" element="s0:Login" />
+  </message>
+  <message name="LoginSoapOut">
+    <part name="parameters" element="s0:LoginResponse" />
+  </message>
+  <message name="LoginAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="LoginExSoapIn">
+    <part name="parameters" element="s0:LoginEx" />
+  </message>
+  <message name="LoginExSoapOut">
+    <part name="parameters" element="s0:LoginExResponse" />
+  </message>
+  <message name="LoginExAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="LogoutSoapIn">
+    <part name="parameters" element="s0:Logout" />
+  </message>
+  <message name="LogoutSoapOut">
+    <part name="parameters" element="s0:LogoutResponse" />
+  </message>
+  <message name="LogoutAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="ExistsSoapIn">
+    <part name="parameters" element="s0:Exists" />
+  </message>
+  <message name="ExistsSoapOut">
+    <part name="parameters" element="s0:ExistsResponse" />
+  </message>
+  <message name="ExistsAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="IsLoginSoapIn">
+    <part name="parameters" element="s0:IsLogin" />
+  </message>
+  <message name="IsLoginSoapOut">
+    <part name="parameters" element="s0:IsLoginResponse" />
+  </message>
+  <message name="IsLoginAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="IsFixedSoapIn">
+    <part name="parameters" element="s0:IsFixed" />
+  </message>
+  <message name="IsFixedSoapOut">
+    <part name="parameters" element="s0:IsFixedResponse" />
+  </message>
+  <message name="IsFixedAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="IsFixed_1SoapIn">
+    <part name="parameters" element="s0:IsFixed_1" />
+  </message>
+  <message name="IsFixed_1SoapOut">
+    <part name="parameters" element="s0:IsFixed_1Response" />
+  </message>
+  <message name="IsFixed_1AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="IsFixed_2SoapIn">
+    <part name="parameters" element="s0:IsFixed_2" />
+  </message>
+  <message name="IsFixed_2SoapOut">
+    <part name="parameters" element="s0:IsFixed_2Response" />
+  </message>
+  <message name="IsFixed_2AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="IsFixed_3SoapIn">
+    <part name="parameters" element="s0:IsFixed_3" />
+  </message>
+  <message name="IsFixed_3SoapOut">
+    <part name="parameters" element="s0:IsFixed_3Response" />
+  </message>
+  <message name="IsFixed_3AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="IsFixed_4SoapIn">
+    <part name="parameters" element="s0:IsFixed_4" />
+  </message>
+  <message name="IsFixed_4SoapOut">
+    <part name="parameters" element="s0:IsFixed_4Response" />
+  </message>
+  <message name="IsFixed_4AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="IsFixed_5SoapIn">
+    <part name="parameters" element="s0:IsFixed_5" />
+  </message>
+  <message name="IsFixed_5SoapOut">
+    <part name="parameters" element="s0:IsFixed_5Response" />
+  </message>
+  <message name="IsFixed_5AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="VerifyLoginSoapIn">
+    <part name="parameters" element="s0:VerifyLogin" />
+  </message>
+  <message name="VerifyLoginSoapOut">
+    <part name="parameters" element="s0:VerifyLoginResponse" />
+  </message>
+  <message name="VerifyLoginAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="VerifyLoginExSoapIn">
+    <part name="parameters" element="s0:VerifyLoginEx" />
+  </message>
+  <message name="VerifyLoginExSoapOut">
+    <part name="parameters" element="s0:VerifyLoginExResponse" />
+  </message>
+  <message name="VerifyLoginExAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="AddMemberSoapIn">
+    <part name="parameters" element="s0:AddMember" />
+  </message>
+  <message name="AddMemberSoapOut">
+    <part name="parameters" element="s0:AddMemberResponse" />
+  </message>
+  <message name="AddMemberAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="AddMember_1SoapIn">
+    <part name="parameters" element="s0:AddMember_1" />
+  </message>
+  <message name="AddMember_1SoapOut">
+    <part name="parameters" element="s0:AddMember_1Response" />
+  </message>
+  <message name="AddMember_1AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="AddRoleSoapIn">
+    <part name="parameters" element="s0:AddRole" />
+  </message>
+  <message name="AddRoleSoapOut">
+    <part name="parameters" element="s0:AddRoleResponse" />
+  </message>
+  <message name="AddRoleAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="AddUserSoapIn">
+    <part name="parameters" element="s0:AddUser" />
+  </message>
+  <message name="AddUserSoapOut">
+    <part name="parameters" element="s0:AddUserResponse" />
+  </message>
+  <message name="AddUserAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetFixedIDSoapIn">
+    <part name="parameters" element="s0:GetFixedID" />
+  </message>
+  <message name="GetFixedIDSoapOut">
+    <part name="parameters" element="s0:GetFixedIDResponse" />
+  </message>
+  <message name="GetFixedIDAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetFixedID_1SoapIn">
+    <part name="parameters" element="s0:GetFixedID_1" />
+  </message>
+  <message name="GetFixedID_1SoapOut">
+    <part name="parameters" element="s0:GetFixedID_1Response" />
+  </message>
+  <message name="GetFixedID_1AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetFixedID_2SoapIn">
+    <part name="parameters" element="s0:GetFixedID_2" />
+  </message>
+  <message name="GetFixedID_2SoapOut">
+    <part name="parameters" element="s0:GetFixedID_2Response" />
+  </message>
+  <message name="GetFixedID_2AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetFixedID_3SoapIn">
+    <part name="parameters" element="s0:GetFixedID_3" />
+  </message>
+  <message name="GetFixedID_3SoapOut">
+    <part name="parameters" element="s0:GetFixedID_3Response" />
+  </message>
+  <message name="GetFixedID_3AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetUserID_CurrentSoapIn">
+    <part name="parameters" element="s0:GetUserID_Current" />
+  </message>
+  <message name="GetUserID_CurrentSoapOut">
+    <part name="parameters" element="s0:GetUserID_CurrentResponse" />
+  </message>
+  <message name="GetUserID_CurrentAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetUserIDSoapIn">
+    <part name="parameters" element="s0:GetUserID" />
+  </message>
+  <message name="GetUserIDSoapOut">
+    <part name="parameters" element="s0:GetUserIDResponse" />
+  </message>
+  <message name="GetUserIDAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetUserNameSoapIn">
+    <part name="parameters" element="s0:GetUserName" />
+  </message>
+  <message name="GetUserNameSoapOut">
+    <part name="parameters" element="s0:GetUserNameResponse" />
+  </message>
+  <message name="GetUserNameAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetUserInfoAllSoapIn">
+    <part name="parameters" element="s0:GetUserInfoAll" />
+  </message>
+  <message name="GetUserInfoAllSoapOut">
+    <part name="parameters" element="s0:GetUserInfoAllResponse" />
+  </message>
+  <message name="GetUserInfoAllAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetUserInfoSoapIn">
+    <part name="parameters" element="s0:GetUserInfo" />
+  </message>
+  <message name="GetUserInfoSoapOut">
+    <part name="parameters" element="s0:GetUserInfoResponse" />
+  </message>
+  <message name="GetUserInfoAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetMemberSoapIn">
+    <part name="parameters" element="s0:GetMember" />
+  </message>
+  <message name="GetMemberSoapOut">
+    <part name="parameters" element="s0:GetMemberResponse" />
+  </message>
+  <message name="GetMemberAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetRolesAllSoapIn">
+    <part name="parameters" element="s0:GetRolesAll" />
+  </message>
+  <message name="GetRolesAllSoapOut">
+    <part name="parameters" element="s0:GetRolesAllResponse" />
+  </message>
+  <message name="GetRolesAllAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetRolesSoapIn">
+    <part name="parameters" element="s0:GetRoles" />
+  </message>
+  <message name="GetRolesSoapOut">
+    <part name="parameters" element="s0:GetRolesResponse" />
+  </message>
+  <message name="GetRolesAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetUsersAllSoapIn">
+    <part name="parameters" element="s0:GetUsersAll" />
+  </message>
+  <message name="GetUsersAllSoapOut">
+    <part name="parameters" element="s0:GetUsersAllResponse" />
+  </message>
+  <message name="GetUsersAllAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetUsersSoapIn">
+    <part name="parameters" element="s0:GetUsers" />
+  </message>
+  <message name="GetUsersSoapOut">
+    <part name="parameters" element="s0:GetUsersResponse" />
+  </message>
+  <message name="GetUsersAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="FetchPermissionAllSoapIn">
+    <part name="parameters" element="s0:FetchPermissionAll" />
+  </message>
+  <message name="FetchPermissionAllSoapOut">
+    <part name="parameters" element="s0:FetchPermissionAllResponse" />
+  </message>
+  <message name="FetchPermissionAllAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="FetchPermission_1SoapIn">
+    <part name="parameters" element="s0:FetchPermission_1" />
+  </message>
+  <message name="FetchPermission_1SoapOut">
+    <part name="parameters" element="s0:FetchPermission_1Response" />
+  </message>
+  <message name="FetchPermission_1AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="FetchPermission_2SoapIn">
+    <part name="parameters" element="s0:FetchPermission_2" />
+  </message>
+  <message name="FetchPermission_2SoapOut">
+    <part name="parameters" element="s0:FetchPermission_2Response" />
+  </message>
+  <message name="FetchPermission_2AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="FetchPermission_3SoapIn">
+    <part name="parameters" element="s0:FetchPermission_3" />
+  </message>
+  <message name="FetchPermission_3SoapOut">
+    <part name="parameters" element="s0:FetchPermission_3Response" />
+  </message>
+  <message name="FetchPermission_3AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="FetchPermission_4SoapIn">
+    <part name="parameters" element="s0:FetchPermission_4" />
+  </message>
+  <message name="FetchPermission_4SoapOut">
+    <part name="parameters" element="s0:FetchPermission_4Response" />
+  </message>
+  <message name="FetchPermission_4AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="FetchPermission_5SoapIn">
+    <part name="parameters" element="s0:FetchPermission_5" />
+  </message>
+  <message name="FetchPermission_5SoapOut">
+    <part name="parameters" element="s0:FetchPermission_5Response" />
+  </message>
+  <message name="FetchPermission_5AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="FetchPermission_6SoapIn">
+    <part name="parameters" element="s0:FetchPermission_6" />
+  </message>
+  <message name="FetchPermission_6SoapOut">
+    <part name="parameters" element="s0:FetchPermission_6Response" />
+  </message>
+  <message name="FetchPermission_6AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="FetchPermission_7SoapIn">
+    <part name="parameters" element="s0:FetchPermission_7" />
+  </message>
+  <message name="FetchPermission_7SoapOut">
+    <part name="parameters" element="s0:FetchPermission_7Response" />
+  </message>
+  <message name="FetchPermission_7AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="FetchPermission_8SoapIn">
+    <part name="parameters" element="s0:FetchPermission_8" />
+  </message>
+  <message name="FetchPermission_8SoapOut">
+    <part name="parameters" element="s0:FetchPermission_8Response" />
+  </message>
+  <message name="FetchPermission_8AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="FetchPermission_9SoapIn">
+    <part name="parameters" element="s0:FetchPermission_9" />
+  </message>
+  <message name="FetchPermission_9SoapOut">
+    <part name="parameters" element="s0:FetchPermission_9Response" />
+  </message>
+  <message name="FetchPermission_9AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="FetchPermission_10SoapIn">
+    <part name="parameters" element="s0:FetchPermission_10" />
+  </message>
+  <message name="FetchPermission_10SoapOut">
+    <part name="parameters" element="s0:FetchPermission_10Response" />
+  </message>
+  <message name="FetchPermission_10AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="FetchPermission_11SoapIn">
+    <part name="parameters" element="s0:FetchPermission_11" />
+  </message>
+  <message name="FetchPermission_11SoapOut">
+    <part name="parameters" element="s0:FetchPermission_11Response" />
+  </message>
+  <message name="FetchPermission_11AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetPermission_1SoapIn">
+    <part name="parameters" element="s0:GetPermission_1" />
+  </message>
+  <message name="GetPermission_1SoapOut">
+    <part name="parameters" element="s0:GetPermission_1Response" />
+  </message>
+  <message name="GetPermission_1AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetPermission_2SoapIn">
+    <part name="parameters" element="s0:GetPermission_2" />
+  </message>
+  <message name="GetPermission_2SoapOut">
+    <part name="parameters" element="s0:GetPermission_2Response" />
+  </message>
+  <message name="GetPermission_2AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetPermission_3SoapIn">
+    <part name="parameters" element="s0:GetPermission_3" />
+  </message>
+  <message name="GetPermission_3SoapOut">
+    <part name="parameters" element="s0:GetPermission_3Response" />
+  </message>
+  <message name="GetPermission_3AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetPermission_4SoapIn">
+    <part name="parameters" element="s0:GetPermission_4" />
+  </message>
+  <message name="GetPermission_4SoapOut">
+    <part name="parameters" element="s0:GetPermission_4Response" />
+  </message>
+  <message name="GetPermission_4AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetPermissionSetAllSoapIn">
+    <part name="parameters" element="s0:GetPermissionSetAll" />
+  </message>
+  <message name="GetPermissionSetAllSoapOut">
+    <part name="parameters" element="s0:GetPermissionSetAllResponse" />
+  </message>
+  <message name="GetPermissionSetAllAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetPermissionSet_1SoapIn">
+    <part name="parameters" element="s0:GetPermissionSet_1" />
+  </message>
+  <message name="GetPermissionSet_1SoapOut">
+    <part name="parameters" element="s0:GetPermissionSet_1Response" />
+  </message>
+  <message name="GetPermissionSet_1AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetPermissionSet_2SoapIn">
+    <part name="parameters" element="s0:GetPermissionSet_2" />
+  </message>
+  <message name="GetPermissionSet_2SoapOut">
+    <part name="parameters" element="s0:GetPermissionSet_2Response" />
+  </message>
+  <message name="GetPermissionSet_2AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetPermissionSet_3SoapIn">
+    <part name="parameters" element="s0:GetPermissionSet_3" />
+  </message>
+  <message name="GetPermissionSet_3SoapOut">
+    <part name="parameters" element="s0:GetPermissionSet_3Response" />
+  </message>
+  <message name="GetPermissionSet_3AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetPermissionSet_4SoapIn">
+    <part name="parameters" element="s0:GetPermissionSet_4" />
+  </message>
+  <message name="GetPermissionSet_4SoapOut">
+    <part name="parameters" element="s0:GetPermissionSet_4Response" />
+  </message>
+  <message name="GetPermissionSet_4AuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="GetTopmostSoapIn">
+    <part name="parameters" element="s0:GetTopmost" />
+  </message>
+  <message name="GetTopmostSoapOut">
+    <part name="parameters" element="s0:GetTopmostResponse" />
+  </message>
+  <message name="GetTopmostAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="RemoveMemberAllSoapIn">
+    <part name="parameters" element="s0:RemoveMemberAll" />
+  </message>
+  <message name="RemoveMemberAllSoapOut">
+    <part name="parameters" element="s0:RemoveMemberAllResponse" />
+  </message>
+  <message name="RemoveMemberAllAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="RemoveMemberSoapIn">
+    <part name="parameters" element="s0:RemoveMember" />
+  </message>
+  <message name="RemoveMemberSoapOut">
+    <part name="parameters" element="s0:RemoveMemberResponse" />
+  </message>
+  <message name="RemoveMemberAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="RemoveUserSoapIn">
+    <part name="parameters" element="s0:RemoveUser" />
+  </message>
+  <message name="RemoveUserSoapOut">
+    <part name="parameters" element="s0:RemoveUserResponse" />
+  </message>
+  <message name="RemoveUserAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="SetPasswordSoapIn">
+    <part name="parameters" element="s0:SetPassword" />
+  </message>
+  <message name="SetPasswordSoapOut">
+    <part name="parameters" element="s0:SetPasswordResponse" />
+  </message>
+  <message name="SetPasswordAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="SetPasswordCurrentSoapIn">
+    <part name="parameters" element="s0:SetPasswordCurrent" />
+  </message>
+  <message name="SetPasswordCurrentSoapOut">
+    <part name="parameters" element="s0:SetPasswordCurrentResponse" />
+  </message>
+  <message name="SetPasswordCurrentAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="UpdatePermissionSoapIn">
+    <part name="parameters" element="s0:UpdatePermission" />
+  </message>
+  <message name="UpdatePermissionSoapOut">
+    <part name="parameters" element="s0:UpdatePermissionResponse" />
+  </message>
+  <message name="UpdatePermissionAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="SetPermissionSoapIn">
+    <part name="parameters" element="s0:SetPermission" />
+  </message>
+  <message name="SetPermissionSoapOut">
+    <part name="parameters" element="s0:SetPermissionResponse" />
+  </message>
+  <message name="SetPermissionAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="SetPermissionCurrentSoapIn">
+    <part name="parameters" element="s0:SetPermissionCurrent" />
+  </message>
+  <message name="SetPermissionCurrentSoapOut">
+    <part name="parameters" element="s0:SetPermissionCurrentResponse" />
+  </message>
+  <message name="SetPermissionCurrentAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="SetUserInfoSoapIn">
+    <part name="parameters" element="s0:SetUserInfo" />
+  </message>
+  <message name="SetUserInfoSoapOut">
+    <part name="parameters" element="s0:SetUserInfoResponse" />
+  </message>
+  <message name="SetUserInfoAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="SetUserInfoSimpleSoapIn">
+    <part name="parameters" element="s0:SetUserInfoSimple" />
+  </message>
+  <message name="SetUserInfoSimpleSoapOut">
+    <part name="parameters" element="s0:SetUserInfoSimpleResponse" />
+  </message>
+  <message name="SetUserInfoSimpleAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="FetchFormAllSoapIn">
+    <part name="parameters" element="s0:FetchFormAll" />
+  </message>
+  <message name="FetchFormAllSoapOut">
+    <part name="parameters" element="s0:FetchFormAllResponse" />
+  </message>
+  <message name="FetchFormAllAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <message name="FetchFormSoapIn">
+    <part name="parameters" element="s0:FetchForm" />
+  </message>
+  <message name="FetchFormSoapOut">
+    <part name="parameters" element="s0:FetchFormResponse" />
+  </message>
+  <message name="FetchFormAuthenticationHeader">
+    <part name="AuthenticationHeader" element="s0:AuthenticationHeader" />
+  </message>
+  <portType name="PermissionSoap">
+    <operation name="Login">
+      <input name="LoginByAuthenticationHeader" message="s0:LoginByAuthenticationHeaderSoapIn" />
+      <output name="LoginByAuthenticationHeader" message="s0:LoginByAuthenticationHeaderSoapOut" />
+    </operation>
+    <operation name="Login">
+      <input message="s0:LoginSoapIn" />
+      <output message="s0:LoginSoapOut" />
+    </operation>
+    <operation name="Login">
+      <input name="LoginEx" message="s0:LoginExSoapIn" />
+      <output name="LoginEx" message="s0:LoginExSoapOut" />
+    </operation>
+    <operation name="Logout">
+      <input message="s0:LogoutSoapIn" />
+      <output message="s0:LogoutSoapOut" />
+    </operation>
+    <operation name="Exists">
+      <input message="s0:ExistsSoapIn" />
+      <output message="s0:ExistsSoapOut" />
+    </operation>
+    <operation name="IsLogin">
+      <input message="s0:IsLoginSoapIn" />
+      <output message="s0:IsLoginSoapOut" />
+    </operation>
+    <operation name="IsFixed">
+      <input message="s0:IsFixedSoapIn" />
+      <output message="s0:IsFixedSoapOut" />
+    </operation>
+    <operation name="IsFixed">
+      <input name="IsFixed_1" message="s0:IsFixed_1SoapIn" />
+      <output name="IsFixed_1" message="s0:IsFixed_1SoapOut" />
+    </operation>
+    <operation name="IsFixed">
+      <input name="IsFixed_2" message="s0:IsFixed_2SoapIn" />
+      <output name="IsFixed_2" message="s0:IsFixed_2SoapOut" />
+    </operation>
+    <operation name="IsFixed">
+      <input name="IsFixed_3" message="s0:IsFixed_3SoapIn" />
+      <output name="IsFixed_3" message="s0:IsFixed_3SoapOut" />
+    </operation>
+    <operation name="IsFixed">
+      <input name="IsFixed_4" message="s0:IsFixed_4SoapIn" />
+      <output name="IsFixed_4" message="s0:IsFixed_4SoapOut" />
+    </operation>
+    <operation name="IsFixed">
+      <input name="IsFixed_5" message="s0:IsFixed_5SoapIn" />
+      <output name="IsFixed_5" message="s0:IsFixed_5SoapOut" />
+    </operation>
+    <operation name="VerifyLogin">
+      <input message="s0:VerifyLoginSoapIn" />
+      <output message="s0:VerifyLoginSoapOut" />
+    </operation>
+    <operation name="VerifyLogin">
+      <input name="VerifyLoginEx" message="s0:VerifyLoginExSoapIn" />
+      <output name="VerifyLoginEx" message="s0:VerifyLoginExSoapOut" />
+    </operation>
+    <operation name="AddMember">
+      <input message="s0:AddMemberSoapIn" />
+      <output message="s0:AddMemberSoapOut" />
+    </operation>
+    <operation name="AddMember">
+      <input name="AddMember_1" message="s0:AddMember_1SoapIn" />
+      <output name="AddMember_1" message="s0:AddMember_1SoapOut" />
+    </operation>
+    <operation name="AddRole">
+      <input message="s0:AddRoleSoapIn" />
+      <output message="s0:AddRoleSoapOut" />
+    </operation>
+    <operation name="AddUser">
+      <input message="s0:AddUserSoapIn" />
+      <output message="s0:AddUserSoapOut" />
+    </operation>
+    <operation name="GetFixedID">
+      <input message="s0:GetFixedIDSoapIn" />
+      <output message="s0:GetFixedIDSoapOut" />
+    </operation>
+    <operation name="GetFixedID">
+      <input name="GetFixedID_1" message="s0:GetFixedID_1SoapIn" />
+      <output name="GetFixedID_1" message="s0:GetFixedID_1SoapOut" />
+    </operation>
+    <operation name="GetFixedID">
+      <input name="GetFixedID_2" message="s0:GetFixedID_2SoapIn" />
+      <output name="GetFixedID_2" message="s0:GetFixedID_2SoapOut" />
+    </operation>
+    <operation name="GetFixedID">
+      <input name="GetFixedID_3" message="s0:GetFixedID_3SoapIn" />
+      <output name="GetFixedID_3" message="s0:GetFixedID_3SoapOut" />
+    </operation>
+    <operation name="GetUserID">
+      <input name="GetUserID_Current" message="s0:GetUserID_CurrentSoapIn" />
+      <output name="GetUserID_Current" message="s0:GetUserID_CurrentSoapOut" />
+    </operation>
+    <operation name="GetUserID">
+      <input message="s0:GetUserIDSoapIn" />
+      <output message="s0:GetUserIDSoapOut" />
+    </operation>
+    <operation name="GetUserName">
+      <input message="s0:GetUserNameSoapIn" />
+      <output message="s0:GetUserNameSoapOut" />
+    </operation>
+    <operation name="GetUserInfo">
+      <input name="GetUserInfoAll" message="s0:GetUserInfoAllSoapIn" />
+      <output name="GetUserInfoAll" message="s0:GetUserInfoAllSoapOut" />
+    </operation>
+    <operation name="GetUserInfo">
+      <input message="s0:GetUserInfoSoapIn" />
+      <output message="s0:GetUserInfoSoapOut" />
+    </operation>
+    <operation name="GetMember">
+      <input message="s0:GetMemberSoapIn" />
+      <output message="s0:GetMemberSoapOut" />
+    </operation>
+    <operation name="GetRoles">
+      <input name="GetRolesAll" message="s0:GetRolesAllSoapIn" />
+      <output name="GetRolesAll" message="s0:GetRolesAllSoapOut" />
+    </operation>
+    <operation name="GetRoles">
+      <input message="s0:GetRolesSoapIn" />
+      <output message="s0:GetRolesSoapOut" />
+    </operation>
+    <operation name="GetUsers">
+      <input name="GetUsersAll" message="s0:GetUsersAllSoapIn" />
+      <output name="GetUsersAll" message="s0:GetUsersAllSoapOut" />
+    </operation>
+    <operation name="GetUsers">
+      <input message="s0:GetUsersSoapIn" />
+      <output message="s0:GetUsersSoapOut" />
+    </operation>
+    <operation name="FetchPermission">
+      <input name="FetchPermissionAll" message="s0:FetchPermissionAllSoapIn" />
+      <output name="FetchPermissionAll" message="s0:FetchPermissionAllSoapOut" />
+    </operation>
+    <operation name="FetchPermission">
+      <input name="FetchPermission_1" message="s0:FetchPermission_1SoapIn" />
+      <output name="FetchPermission_1" message="s0:FetchPermission_1SoapOut" />
+    </operation>
+    <operation name="FetchPermission">
+      <input name="FetchPermission_2" message="s0:FetchPermission_2SoapIn" />
+      <output name="FetchPermission_2" message="s0:FetchPermission_2SoapOut" />
+    </operation>
+    <operation name="FetchPermission">
+      <input name="FetchPermission_3" message="s0:FetchPermission_3SoapIn" />
+      <output name="FetchPermission_3" message="s0:FetchPermission_3SoapOut" />
+    </operation>
+    <operation name="FetchPermission">
+      <input name="FetchPermission_4" message="s0:FetchPermission_4SoapIn" />
+      <output name="FetchPermission_4" message="s0:FetchPermission_4SoapOut" />
+    </operation>
+    <operation name="FetchPermission">
+      <input name="FetchPermission_5" message="s0:FetchPermission_5SoapIn" />
+      <output name="FetchPermission_5" message="s0:FetchPermission_5SoapOut" />
+    </operation>
+    <operation name="FetchPermission">
+      <input name="FetchPermission_6" message="s0:FetchPermission_6SoapIn" />
+      <output name="FetchPermission_6" message="s0:FetchPermission_6SoapOut" />
+    </operation>
+    <operation name="FetchPermission">
+      <input name="FetchPermission_7" message="s0:FetchPermission_7SoapIn" />
+      <output name="FetchPermission_7" message="s0:FetchPermission_7SoapOut" />
+    </operation>
+    <operation name="FetchPermission">
+      <input name="FetchPermission_8" message="s0:FetchPermission_8SoapIn" />
+      <output name="FetchPermission_8" message="s0:FetchPermission_8SoapOut" />
+    </operation>
+    <operation name="FetchPermission">
+      <input name="FetchPermission_9" message="s0:FetchPermission_9SoapIn" />
+      <output name="FetchPermission_9" message="s0:FetchPermission_9SoapOut" />
+    </operation>
+    <operation name="FetchPermission">
+      <input name="FetchPermission_10" message="s0:FetchPermission_10SoapIn" />
+      <output name="FetchPermission_10" message="s0:FetchPermission_10SoapOut" />
+    </operation>
+    <operation name="FetchPermission">
+      <input name="FetchPermission_11" message="s0:FetchPermission_11SoapIn" />
+      <output name="FetchPermission_11" message="s0:FetchPermission_11SoapOut" />
+    </operation>
+    <operation name="GetPermission">
+      <input name="GetPermission_1" message="s0:GetPermission_1SoapIn" />
+      <output name="GetPermission_1" message="s0:GetPermission_1SoapOut" />
+    </operation>
+    <operation name="GetPermission">
+      <input name="GetPermission_2" message="s0:GetPermission_2SoapIn" />
+      <output name="GetPermission_2" message="s0:GetPermission_2SoapOut" />
+    </operation>
+    <operation name="GetPermission">
+      <input name="GetPermission_3" message="s0:GetPermission_3SoapIn" />
+      <output name="GetPermission_3" message="s0:GetPermission_3SoapOut" />
+    </operation>
+    <operation name="GetPermission">
+      <input name="GetPermission_4" message="s0:GetPermission_4SoapIn" />
+      <output name="GetPermission_4" message="s0:GetPermission_4SoapOut" />
+    </operation>
+    <operation name="GetPermissionSet">
+      <input name="GetPermissionSetAll" message="s0:GetPermissionSetAllSoapIn" />
+      <output name="GetPermissionSetAll" message="s0:GetPermissionSetAllSoapOut" />
+    </operation>
+    <operation name="GetPermissionSet">
+      <input name="GetPermissionSet_1" message="s0:GetPermissionSet_1SoapIn" />
+      <output name="GetPermissionSet_1" message="s0:GetPermissionSet_1SoapOut" />
+    </operation>
+    <operation name="GetPermissionSet">
+      <input name="GetPermissionSet_2" message="s0:GetPermissionSet_2SoapIn" />
+      <output name="GetPermissionSet_2" message="s0:GetPermissionSet_2SoapOut" />
+    </operation>
+    <operation name="GetPermissionSet">
+      <input name="GetPermissionSet_3" message="s0:GetPermissionSet_3SoapIn" />
+      <output name="GetPermissionSet_3" message="s0:GetPermissionSet_3SoapOut" />
+    </operation>
+    <operation name="GetPermissionSet">
+      <input name="GetPermissionSet_4" message="s0:GetPermissionSet_4SoapIn" />
+      <output name="GetPermissionSet_4" message="s0:GetPermissionSet_4SoapOut" />
+    </operation>
+    <operation name="GetTopmost">
+      <input message="s0:GetTopmostSoapIn" />
+      <output message="s0:GetTopmostSoapOut" />
+    </operation>
+    <operation name="RemoveMember">
+      <input name="RemoveMemberAll" message="s0:RemoveMemberAllSoapIn" />
+      <output name="RemoveMemberAll" message="s0:RemoveMemberAllSoapOut" />
+    </operation>
+    <operation name="RemoveMember">
+      <input message="s0:RemoveMemberSoapIn" />
+      <output message="s0:RemoveMemberSoapOut" />
+    </operation>
+    <operation name="RemoveUser">
+      <input message="s0:RemoveUserSoapIn" />
+      <output message="s0:RemoveUserSoapOut" />
+    </operation>
+    <operation name="SetPassword">
+      <input message="s0:SetPasswordSoapIn" />
+      <output message="s0:SetPasswordSoapOut" />
+    </operation>
+    <operation name="SetPassword">
+      <input name="SetPasswordCurrent" message="s0:SetPasswordCurrentSoapIn" />
+      <output name="SetPasswordCurrent" message="s0:SetPasswordCurrentSoapOut" />
+    </operation>
+    <operation name="SetPermission">
+      <input name="UpdatePermission" message="s0:UpdatePermissionSoapIn" />
+      <output name="UpdatePermission" message="s0:UpdatePermissionSoapOut" />
+    </operation>
+    <operation name="SetPermission">
+      <input message="s0:SetPermissionSoapIn" />
+      <output message="s0:SetPermissionSoapOut" />
+    </operation>
+    <operation name="SetPermission">
+      <input name="SetPermissionCurrent" message="s0:SetPermissionCurrentSoapIn" />
+      <output name="SetPermissionCurrent" message="s0:SetPermissionCurrentSoapOut" />
+    </operation>
+    <operation name="SetUserInfo">
+      <input message="s0:SetUserInfoSoapIn" />
+      <output message="s0:SetUserInfoSoapOut" />
+    </operation>
+    <operation name="SetUserInfo">
+      <input name="SetUserInfoSimple" message="s0:SetUserInfoSimpleSoapIn" />
+      <output name="SetUserInfoSimple" message="s0:SetUserInfoSimpleSoapOut" />
+    </operation>
+    <operation name="FetchForm">
+      <input name="FetchFormAll" message="s0:FetchFormAllSoapIn" />
+      <output name="FetchFormAll" message="s0:FetchFormAllSoapOut" />
+    </operation>
+    <operation name="FetchForm">
+      <input message="s0:FetchFormSoapIn" />
+      <output message="s0:FetchFormSoapOut" />
+    </operation>
+  </portType>
+  <portType name="PermissionHttpGet" />
+  <portType name="PermissionHttpPost" />
+  <binding name="PermissionSoap" type="s0:PermissionSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="Login">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/LoginByAuthenticationHeader" style="document" />
+      <input name="LoginByAuthenticationHeader">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:LoginByAuthenticationHeaderAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="LoginByAuthenticationHeader">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:LoginByAuthenticationHeaderAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="Login">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/Login" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:LoginAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:LoginAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="Login">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/LoginEx" style="document" />
+      <input name="LoginEx">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:LoginExAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="LoginEx">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:LoginExAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="Logout">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/Logout" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:LogoutAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:LogoutAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="Exists">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/Exists" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:ExistsAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:ExistsAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="IsLogin">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/IsLogin" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:IsLoginAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:IsLoginAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="IsFixed">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/IsFixed" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:IsFixedAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:IsFixedAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="IsFixed">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/IsFixed_1" style="document" />
+      <input name="IsFixed_1">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:IsFixed_1AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="IsFixed_1">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:IsFixed_1AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="IsFixed">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/IsFixed_2" style="document" />
+      <input name="IsFixed_2">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:IsFixed_2AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="IsFixed_2">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:IsFixed_2AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="IsFixed">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/IsFixed_3" style="document" />
+      <input name="IsFixed_3">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:IsFixed_3AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="IsFixed_3">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:IsFixed_3AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="IsFixed">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/IsFixed_4" style="document" />
+      <input name="IsFixed_4">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:IsFixed_4AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="IsFixed_4">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:IsFixed_4AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="IsFixed">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/IsFixed_5" style="document" />
+      <input name="IsFixed_5">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:IsFixed_5AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="IsFixed_5">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:IsFixed_5AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="VerifyLogin">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/VerifyLogin" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:VerifyLoginAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:VerifyLoginAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="VerifyLogin">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/VerifyLoginEx" style="document" />
+      <input name="VerifyLoginEx">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:VerifyLoginExAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="VerifyLoginEx">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:VerifyLoginExAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="AddMember">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/AddMember" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:AddMemberAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:AddMemberAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="AddMember">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/AddMember_1" style="document" />
+      <input name="AddMember_1">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:AddMember_1AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="AddMember_1">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:AddMember_1AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="AddRole">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/AddRole" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:AddRoleAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:AddRoleAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="AddUser">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/AddUser" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:AddUserAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:AddUserAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetFixedID">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetFixedID" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetFixedIDAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetFixedIDAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetFixedID">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetFixedID_1" style="document" />
+      <input name="GetFixedID_1">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetFixedID_1AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="GetFixedID_1">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetFixedID_1AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetFixedID">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetFixedID_2" style="document" />
+      <input name="GetFixedID_2">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetFixedID_2AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="GetFixedID_2">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetFixedID_2AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetFixedID">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetFixedID_3" style="document" />
+      <input name="GetFixedID_3">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetFixedID_3AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="GetFixedID_3">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetFixedID_3AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetUserID">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetUserID_Current" style="document" />
+      <input name="GetUserID_Current">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetUserID_CurrentAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="GetUserID_Current">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetUserID_CurrentAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetUserID">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetUserID" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetUserIDAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetUserIDAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetUserName">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetUserName" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetUserNameAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetUserNameAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetUserInfo">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetUserInfoAll" style="document" />
+      <input name="GetUserInfoAll">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetUserInfoAllAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="GetUserInfoAll">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetUserInfoAllAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetUserInfo">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetUserInfo" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetUserInfoAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetUserInfoAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetMember">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetMember" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetMemberAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetMemberAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetRoles">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetRolesAll" style="document" />
+      <input name="GetRolesAll">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetRolesAllAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="GetRolesAll">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetRolesAllAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetRoles">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetRoles" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetRolesAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetRolesAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetUsers">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetUsersAll" style="document" />
+      <input name="GetUsersAll">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetUsersAllAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="GetUsersAll">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetUsersAllAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetUsers">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetUsers" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetUsersAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetUsersAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="FetchPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/FetchPermissionAll" style="document" />
+      <input name="FetchPermissionAll">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermissionAllAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="FetchPermissionAll">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermissionAllAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="FetchPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/FetchPermission_1" style="document" />
+      <input name="FetchPermission_1">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_1AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="FetchPermission_1">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_1AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="FetchPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/FetchPermission_2" style="document" />
+      <input name="FetchPermission_2">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_2AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="FetchPermission_2">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_2AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="FetchPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/FetchPermission_3" style="document" />
+      <input name="FetchPermission_3">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_3AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="FetchPermission_3">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_3AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="FetchPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/FetchPermission_4" style="document" />
+      <input name="FetchPermission_4">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_4AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="FetchPermission_4">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_4AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="FetchPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/FetchPermission_5" style="document" />
+      <input name="FetchPermission_5">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_5AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="FetchPermission_5">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_5AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="FetchPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/FetchPermission_6" style="document" />
+      <input name="FetchPermission_6">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_6AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="FetchPermission_6">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_6AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="FetchPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/FetchPermission_7" style="document" />
+      <input name="FetchPermission_7">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_7AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="FetchPermission_7">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_7AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="FetchPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/FetchPermission_8" style="document" />
+      <input name="FetchPermission_8">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_8AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="FetchPermission_8">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_8AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="FetchPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/FetchPermission_9" style="document" />
+      <input name="FetchPermission_9">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_9AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="FetchPermission_9">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_9AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="FetchPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/FetchPermission_10" style="document" />
+      <input name="FetchPermission_10">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_10AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="FetchPermission_10">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_10AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="FetchPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/FetchPermission_11" style="document" />
+      <input name="FetchPermission_11">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_11AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="FetchPermission_11">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchPermission_11AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetPermission_1" style="document" />
+      <input name="GetPermission_1">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermission_1AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="GetPermission_1">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermission_1AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetPermission_2" style="document" />
+      <input name="GetPermission_2">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermission_2AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="GetPermission_2">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermission_2AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetPermission_3" style="document" />
+      <input name="GetPermission_3">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermission_3AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="GetPermission_3">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermission_3AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetPermission_4" style="document" />
+      <input name="GetPermission_4">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermission_4AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="GetPermission_4">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermission_4AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetPermissionSet">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetPermissionSetAll" style="document" />
+      <input name="GetPermissionSetAll">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermissionSetAllAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="GetPermissionSetAll">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermissionSetAllAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetPermissionSet">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetPermissionSet_1" style="document" />
+      <input name="GetPermissionSet_1">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermissionSet_1AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="GetPermissionSet_1">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermissionSet_1AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetPermissionSet">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetPermissionSet_2" style="document" />
+      <input name="GetPermissionSet_2">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermissionSet_2AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="GetPermissionSet_2">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermissionSet_2AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetPermissionSet">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetPermissionSet_3" style="document" />
+      <input name="GetPermissionSet_3">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermissionSet_3AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="GetPermissionSet_3">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermissionSet_3AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetPermissionSet">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetPermissionSet_4" style="document" />
+      <input name="GetPermissionSet_4">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermissionSet_4AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="GetPermissionSet_4">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetPermissionSet_4AuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="GetTopmost">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/GetTopmost" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetTopmostAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:GetTopmostAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="RemoveMember">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/RemoveMemberAll" style="document" />
+      <input name="RemoveMemberAll">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:RemoveMemberAllAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="RemoveMemberAll">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:RemoveMemberAllAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="RemoveMember">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/RemoveMember" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:RemoveMemberAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:RemoveMemberAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="RemoveUser">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/RemoveUser" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:RemoveUserAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:RemoveUserAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="SetPassword">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/SetPassword" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:SetPasswordAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:SetPasswordAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="SetPassword">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/SetPasswordCurrent" style="document" />
+      <input name="SetPasswordCurrent">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:SetPasswordCurrentAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="SetPasswordCurrent">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:SetPasswordCurrentAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="SetPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/UpdatePermission" style="document" />
+      <input name="UpdatePermission">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:UpdatePermissionAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="UpdatePermission">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:UpdatePermissionAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="SetPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/SetPermission" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:SetPermissionAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:SetPermissionAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="SetPermission">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/SetPermissionCurrent" style="document" />
+      <input name="SetPermissionCurrent">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:SetPermissionCurrentAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="SetPermissionCurrent">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:SetPermissionCurrentAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="SetUserInfo">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/SetUserInfo" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:SetUserInfoAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:SetUserInfoAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="SetUserInfo">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/SetUserInfoSimple" style="document" />
+      <input name="SetUserInfoSimple">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:SetUserInfoSimpleAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="SetUserInfoSimple">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:SetUserInfoSimpleAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="FetchForm">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/FetchFormAll" style="document" />
+      <input name="FetchFormAll">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchFormAllAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="FetchFormAll">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchFormAllAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+    <operation name="FetchForm">
+      <soap:operation soapAction="http://iLOOK100.net/WebServices/Permission/FetchForm" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchFormAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:FetchFormAuthenticationHeader" part="AuthenticationHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="PermissionHttpGet" type="s0:PermissionHttpGet">
+    <http:binding verb="GET" />
+  </binding>
+  <binding name="PermissionHttpPost" type="s0:PermissionHttpPost">
+    <http:binding verb="POST" />
+  </binding>
+  <service name="Permission">
+    <port name="PermissionSoap" binding="s0:PermissionSoap">
+      <soap:address location="http://localhost/webservice_cgmis/permission.asmx" />
+    </port>
+    <port name="PermissionHttpGet" binding="s0:PermissionHttpGet">
+      <http:address location="http://localhost/webservice_cgmis/permission.asmx" />
+    </port>
+    <port name="PermissionHttpPost" binding="s0:PermissionHttpPost">
+      <http:address location="http://localhost/webservice_cgmis/permission.asmx" />
+    </port>
+  </service>
+</definitions>

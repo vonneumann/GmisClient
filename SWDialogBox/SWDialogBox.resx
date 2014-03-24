@@ -1,0 +1,1781 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<!-- 
+            Microsoft ResX Schema 
+        
+            Version 1.3
+                
+            The primary goals of this format is to allow a simple XML format 
+            that is mostly human readable. The generation and parsing of the 
+            various data types are done through the TypeConverter classes 
+            associated with the data types.
+        
+            Example:
+        
+                ... ado.net/XML headers & schema ...
+                <resheader name="resmimetype">text/microsoft-resx</resheader>
+                <resheader name="version">1.3</resheader>
+                <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+                <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+                <data name="Name1">this is my long string</data>
+                <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+                <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+                    [base64 mime encoded serialized .NET Framework object]
+                </data>
+                <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+                    [base64 mime encoded string representing a byte array form of the .NET Framework object]
+                </data>
+        
+            There are any number of "resheader" rows that contain simple 
+            name/value pairs.
+            
+            Each data row contains a name, and value. The row also contains a 
+            type or mimetype. Type corresponds to a .NET class that support 
+            text/value conversion through the TypeConverter architecture. 
+            Classes that don't support this are serialized and stored with the 
+            mimetype set.
+                     
+            The mimetype is used for serialized objects, and tells the 
+            ResXResourceReader how to depersist the object. This is currently not 
+            extensible. For a given mimetype the value must be set accordingly:
+        
+            Note - application/x-microsoft.net.object.binary.base64 is the format 
+                   that the ResXResourceWriter will generate, however the reader can 
+                   read any of the formats listed below.
+        
+            mimetype: application/x-microsoft.net.object.binary.base64
+            value   : The object must be serialized with 
+                    : System.Serialization.Formatters.Binary.BinaryFormatter
+                    : and then encoded with base64 encoding.
+        
+            mimetype: application/x-microsoft.net.object.soap.base64
+            value   : The object must be serialized with 
+                    : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+                    : and then encoded with base64 encoding.
+            mimetype: application/x-microsoft.net.object.bytearray.base64
+            value   : The object must be serialized into a byte array 
+                    : using a System.ComponentModel.TypeConverter
+                    : and then encoded with base64 encoding.
+        -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ICON-SW16" type="System.Drawing.Icon, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		<value>
+        AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAgICAAMDAwAAAAP8AAP8AAAD//wD/AAAA/wD/AP//
+        AAD///8AAAAA8ADwAAAAAA//D/8AAAAA8PDw8PAAAA8A8PDwDwAADw8P/w8PAADwDwDwDwDwAPDwAPAA
+        8PAA8PAAAADw8AD/AAAAAA/wAP8AAAAAD/AADwAAAAAPAAAPAACQAA8AAADwAAkA8AAAAA8JmQ8AAAAA
+        AAkAAAAAAAAAAJAAAAD93wAA+I8AAPVXAADtWwAA6isAANttAADXdQAA1/UAAM/5AADP+QAA7/sAAO97
+        AAD3twAA+i8AAP7/AAD/fwAA
+</value>
+	</data>
+	<data name="ICON-SW32" type="System.Drawing.Icon, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		<value>
+        AAABAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAwMDAAICAgAAAAP8AAP8AAAD//wD/AAAA/wD/AP//
+        AAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAAAAAAAAkAAAAAAA
+        AAAAAAAAAAAAmZkAAAAAAAAAAAAAAAAAAJmZAAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAAAAAAAJAA
+        AAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////8/z//8jxP/+9a9//fZvv/v7
+        39/348fv79279++9vffffb773v5/e97+f3u9/n+7vf//vb3//727///du///3bv//9vb///b2///293/
+        /7vt//+37f//t/b9/2/6/v9f/X9+v/68PX//HDj//8bj////f////7///////w==
+</value>
+	</data>
+	<data name="ICON-App" type="System.Drawing.Icon, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		<value>
+        AAABAAEAICAAAAEAGACoDAAAFgAAACgAAAAgAAAAQAAAAAEAGAAAAAAAgAwAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAACibHeibHeGPk53Jzd/OkiMU12MU12MU10AAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBN0aBN0ZzHTB0ITJ8
+        NkOCQk56Lz15LTqESk6MU12MU12MU10AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        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
+        hI2+mqLQq7PQqrLVt70AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAACrg4qccHmVVmKca3WcYm6fY26jaXSneYKqeYO0gYrBlZ7BlZ4AAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACccHmVVmKca3Wn
+        fIWicnukdH6vfIbDnaTDnaTVt70AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD/////////////////////////////////+Af//+AB///AAAf/gABh/wAAOP4A
+        ABz4AAAM8AAAAOAAAAHEAAADjAAABwwAAA8cAAAPHAAADwwAAA+EAAAfwAAAH/8AAD//gAB//8AA///g
+        Af//8AP//////////////////////w==
+</value>
+	</data>
+	<data name="BITMAP-Title" type="System.Drawing.Bitmap, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		<value>
+        /9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
+        JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
+        MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABNAZ0DASIAAhEBAxEB/8QA
+        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
+        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
+        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
+        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKKKACiiigAorC8Y6nNpHhS+vrc/vYwgHTu6q
+        eoPYmvCp7my1e7M91YFpDwX85lODz2Ax0FdNHDSqx5kznq4hU5WaPpKivnqx0fw2HDtoQJXnP2qUe/r7
+        VPfTaAsGweHsAZGBeyD/AD/9ar+py7/195DxceiPfqK+XZLfQGPyaHsGf+fuQ0z7Jof/AEB//Jl60/s6
+        fcPrlPsz6lor5p0XWU8Ma7YXei2v2WSa4jguP3nmebCWBZPmBxnaORyMV7B/wsIf9Az/AMmP/saxqYSp
+        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
+        vEhXOdpI/X9KZU/VfMtYz+7+J//Z
+</value>
+	</data>
+	<data name="BITMAP-EasterEgg" type="System.Drawing.Bitmap, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		<value>
+        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
+        OAGAox/9aMIXgvCPOfxDE7ugVHIGLnECRwQEADs=
+</value>
+	</data>
+	<data name="ICON-Critical" type="System.Drawing.Icon, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		<value>
+        AAABAAEAICAAAAEAGACoDAAAFgAAACgAAAAgAAAAQAAAAAEAGAAAAAAAgAwAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADGztK1ubuhoqKUko+MhYKEfnuEfnuIgn+Nioib
+        nJuxtbfGztIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADDys2lpqaOiISOhoCVjYeakoydlY+clY+bk46YkIqRiYOJgHt9dnB9d3OamprAx8sAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIz9OusLCRi4aak42mn5mvqKK1rqi5sq27ta+7
+        ta+6s623sKuxqqSqopygmJKUjIaDe3Z3cW6hpKTHz9MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAADEy86gnZqak42spZ+4sq3BvLbIw77OycXSzcnU0MzTz8vSzsrTzsrPysXJw729t7GxqqSjmpWR
+        iYN7c26HhILAx8oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADBx8udmZSnoJq5s63FwLvOysXV0c3Y
+        1NDZ1NHZ1NHY1NHY09DY09DX08/W0s7W0c3V0MzOycS/uLOtpaCakoyEfHZ9eHW9xcgAAAAAAAAAAAAA
+        AAAAAAAAAAAAAADDyc2fm5etp6HBvLbQzdnb2O/f2+7c2Nva1tPb19Pb1tPa1tPa1tPa1dLZ1dLY1NHX
+        09DX0s7X09XZ1OnPyui5ssmgl5KGfnl8eXbAx8oAAAAAAAAAAAAAAAAAAADGztKopaKwqqTGwbvTz9Hf
+        2/Lh3vPh3/Ph3/Pd293c2dXc2dXc2dXc2NTb2NTb19Pa1tPZ1dLa1djd2e/c2PDa1u/V0Oy5srmgmJKE
+        fHeHhYLHz9MAAAAAAAAAAAAAAAC1uLeup6LIw77V0c3c2Nygnu1gX+dzcurKyfPk4vTg3eDe3Nje29jd
+        29fd2tbc2dXc2NTd2dvg3fHJxfBsauVRUOCMiebRy9K0raebkox7c26ho6QAAAAAAAAAAADEy8+qpKDF
+        wLvW0s7a19O6uMxDQtdOTedRUOhfXurMyvTm5fbi4OLg3trf3drf3dne3Njf3N7j4PPKyPJWVeVCQeE9
+        Pd80NNGlob7Jw76tpZ+RiYN3cW7Ax8sAAAAAAAC2t7a8trDW0s3c2dXd2teko8YpKKVLStxWVupZWetn
+        Z+3Ozvbo5/fj4uTh4Nzg39vh4OHl4/XOzPReXulLS+VHRuM9PNcfHpmNirXUz8u/ubOjm5WDe3aam5oA
+        AADHztKxrKbPy8be29fd29fe3NnW1dc/PqsuLqxTU+FfX+5hYe9ubvDR0ffp6fjk4+bj4+Tn5/bS0fVn
+        Z+xUVOlPT+dFRdslJKAtLJjHw8rW0c3PysWyqqSUi4Z8dnLGztLAxMW9uLLc2dTg3tre3Nng3tvh4NzH
+        xtZAQLEzM7NbW+VnZ/FpafF1dfPU1Pjr6vnq6fjV1Pdvb+9dXe1ZWetOTt8qKqcwL562s8fY1NHX0s7V
+        0My9t7GgmJJ+dnGwt7i8vLvOysTj4t3g39vg3trh4Nzi4d7j4uDKydpGRrg5ObtjY+hvb/NwcPR7e/TW
+        1vnZ2Pl3d/JmZvBhYe5WVuQwMK01NaW4tsrb19TZ1dLY09DW0s3Jw76qop2JgXubnJy8urfb2NPm5uHh
+        39vh4Nzi4d7j4+Dl5OLm5uTNzd5LTL8/QMJra+x3d/Z3d/Z/f/Z/f/Vvb/NqavFfX+c2NrQ6Oqy8us/d
+        29fc2NXa1tPY1NHX0s7PysWyq6WSioSMioi/u7fk4t3p6eXh4Nzh4d3j4uDl5OLm5uTn6Obo6ejP0eNR
+        UcdSUtN8ffd8ffd7e/d3d/Zzc/RubvNJSctAP7O+vtPg3tre3Njc2dbb19TZ1dLX08/Szsm4sauZkYuF
+        gX7Dv7rr6eXr6+fh4N3i4t/k4+Hm5ePn6Obo6ujq6+rr7evU1uuHiPaCgvmCg/l/gPh7e/d2dvVxcfRz
+        c/DFxN/i4d7g39zf3dnd2tfb2NTa1tLY09DU0Mu7ta+dlY+DfXnGw73v7+vu7urh4d7j4uDl5OLm5+Xo
+        6efp6+nr7ezt8PDy9PzT1PyGhvqGh/qCg/l9fvd4ePZycvS+vvfq6vjk4+bh4Nzf3drd29fc2dXa1tPY
+        1NHV0My9t7GgmJKGgHzJxsLz8+/y8+/j49/j4+Dl5ePn6Obo6ujq7Ovt7/Dy9Pvj5fyQkfmGh/qHh/p7
+        fPN0dfB5efZzc/R3d/PT0vfp6Pfi4uTg3tre29jc2dXb19PZ1NHUz8u8trCdlpCKhYLJyMTz8u729vPl
+        5eHk4+Hm5ePn6Obp6uns7u/x8/vh4/uKi/iBgvmFhvp+fvRSU9dMTdFub+5ycvRsbPJxcfHQz/bn5vbi
+        4OLe3Njc2dXb19PZ1NHSzsq5s62bk42UkI7Iycjw7ur7/Pnp6ebk4+Hm5uTn6Obq6+zw8frf4fqDhPZ6
+        e/d+f/h5evRTVNlZWtVYWdBHSMtnZ+tqavJkZPBqae7NzPXm5PXf3eDc2dXb19PZ1NHPysW1r6mVjYih
+        oaHHzM3n5OD+/v3w8e3k4+Hm5ePn6Oft7vjc3fl7fPRxcvV2dvZyc/FPUNdXWdTQ0+rT1ehTVMlBQsRf
+        X+diYu9cXOxiYuvKyfPj4fPd2tnb19PY1NHJxL6vqKOOhoG1ubvHz9PX1dD+/fz5+vjn5+Tl5ePo6evZ
+        2vhzdPFoafJtbfNpau5JStBUVdDQ0uns7+7r7ezQ0uROTsI8PL1XV+NZWetUVOlaWujGxfHe2+Da1tPW
+        0c3BvLann5mNh4TFzNAAAADNzs708/D+/v7w8e3l5OLe3uRtbe1gYO9kZfFhYutDRMpPUMvO0ejs7+3r
+        7uzq7Oro6ujNzt9ISLo2NrZPT99RUehLS+ZTUuTNytba1tLPysa5s62ak42mpqUAAAAAAADHz9Hg3dn+
+        /v78/Pvq6uesrNI7O8JPT9xPT9k8PcJKSsPMzuTr7ezr7evq6+ro6ujn6Obm5uTKyttDQ7MvL64+Pso+
+        PtAuLbOTkLzW0s7FwLuspqCSjIbByMwAAAAAAAAAAADN0M/z8e7////5+vjGxtovL64wMLEzM7VERLzJ
+        y+Dp6+np6+np6ujo6efn6Obm5uTl5ePk4+HHx9c+PqwnJ6IkJJ4iIZmppsLNycS5s66ak42usLAAAAAA
+        AAAAAAAAAAAAAADX1tP6+fj+/v73+Pabm85LS7ZhYb7Jyt3n6Obn6Obn6Obn6Obn5+Xm5uTl5OLk4+Hi
+        4t/h4N3HxdNdXLA/PqSDgLfRzsnBvLanoJqgnZrIz9MAAAAAAAAAAAAAAAAAAADIz9Pb2db7+vn+/v75
+        +vjp6ufl5OLl5ePm5uPm5uTm5uTm5ePl5ePk5OHj4uDi4d/h4N3g39vf3dnd29fb2NTV0c3Gwbytp6Gd
+        mZTEy84AAAAAAAAAAAAAAAAAAAAAAAAAAADIz9Hc2tf6+fj////8/fvw8u7n5+Tk4+Hk4+Hk4+Hk4+Hj
+        4uDi4t/h4d7h4Nzg3tvf3dne29jc2dXW087Iw76xqqSgnJfBx8sAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAADIz9PX1tPy8e7+/v7+/v76+vjx8u7p6ebl5eLj49/i4t7h4N3h4Nzh4Nzh4Nvg3tre3NfW087F
+        wLuuqKKopqLDyc0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADN0NDg3tn18/H+/f3+
+        /v37/Pr29/Py8+/t7unr6+fq6uXm5uHk497c2tTQzMa8trGqpKC1uLfGztIAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIztLMzc3Y1dHm5N/w7+vz8+/08/Dv7+vr6uXk4t3b2NPO
+        ysS9uLKyrqi3t7bEy88AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAADIz9PIzM3IycjJyMXKx8PGw73Dv7q/vLe8ure7vLvAw8XGztEAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD/wAP//wAA//wAAD/4AAAf8AAAD+AAAAfAAAADwAAAA4AAAAGAAAABAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAYAAAAHAAAAD4AAAA+AA
+        AAfwAAAP+AAAH/4AAD//AAD//8AD/w==
+</value>
+	</data>
+	<data name="ICON-Question" type="System.Drawing.Icon, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		<value>
+        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
+</value>
+	</data>
+	<data name="ICON-Exclamation" type="System.Drawing.Icon, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		<value>
+        AAABAAEAICAAAAEAGACoDAAAFgAAACgAAAAgAAAAQAAAAAEAGAAAAAAAgAwAAAAAAAAAAAAAAAAAAAAA
+        AADGztK/x8qxuLuor7KlrK+lrK+lrK+lrK+lrK+lrK+lrK+lrK+lrK+lrK+lrK+lrK+lrK+lrK+lrK+l
+        rK+lrK+lrK+lrK+lrK+lrK+lrK+lrK+lrK+or7KyubzAyMzHz9O9xcmgpql4fH9hZWddYWJcYGJcYGJc
+        YGJcYGJcYGJcYGJcYGJcYGJcYGJcYGJcYGJcYGJcYGJcYGJcYGJcYGJcYGJcYGJcYGJcYGJcYGJcYGJd
+        YWJiZWd7gIKiqKzAx8upwMhNjaI2iaM0hZ80hZ40hZ40hZ40hZ40hZ40hZ40hZ40hZ40hZ40hZ40hZ40
+        hZ40hZ40hZ40hZ40hZ40hZ40hZ40hZ40hZ40hZ40hZ40hZ4ygZkvZXRKXWd4fYCwt7tfq8JEtNZDstNC
+        sNJCsNFCsNFCsNFCsNFCsNFCsNFCsNFCsNFCsNFCsNFCsNFCsNFCsNFCsNFCsNFCsNFCsNFCsNFCsNFC
+        sNFCsNFCsNFCsNFBrc48n74wZ3hhZWenrbFNu9xZ0fNVy+1OwuROwuROwuROwuROwuROwuROwuROwuRO
+        wuROwuROwuROwuROwuROwuROwuROwuROwuROwuROwuROwuROwuROwuROwuROwuRKvN5DsNA1hp9scHKr
+        srZlxN9o5P1r5P5b0vNZz/FZz/FZz/FZz/FZz/FZz/FZz/FZz/FZz/FYpLpzWVC6nZJ6zuVZz/FZz/FZ
+        z/FZz/FZz/FZz/FZz/FZz/FZz/FXze5NweJGtNM+hZqJjpG5wcWhytZZ1fRy7P9l3Ppb0fFb0fFb0fFb
+        0fFb0fFb0fFb0fFb0fFb0fFBPDhmNia9gm6ol49b0fFb0fFb0fFb0fFb0fFb0fFb0fFb0fFb0fFTyOhK
+        vNtBqcViiJOkq67Ey88AAABpyeJs6P1v6f5f1vRd0/Jd0/Jd0/Jd0/Jd0/Jd0/Jd0/Jd0/IxOTtCIRVi
+        MyNsamZd0/Jd0/Jd0/Jd0/Jd0/Jd0/Jd0/Jd0/Jb0O9Qw+JJt9RCipyJjpG5wcUAAAAAAACny9db1vN1
+        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
+        B///4Af//+AP///wD///+B///////w==
+</value>
+	</data>
+	<data name="ICON-Information" type="System.Drawing.Icon, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		<value>
+        AAABAAIAEBAAAAEACABoBQAAJgAAACAgAAABAAgAqAgAAI4FAAAoAAAAEAAAACAAAAABAAgAAAAAAEAB
+        AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAMDAwADA3MAA8MqmANTw
+        /wCx4v8AjtT/AGvG/wBIuP8AJar/AACq/wAAktwAAHq5AABilgAASnMAADJQANTj/wCxx/8Ajqv/AGuP
+        /wBIc/8AJVf/AABV/wAASdwAAD25AAAxlgAAJXMAABlQANTU/wCxsf8Ajo7/AGtr/wBISP8AJSX/AAAA
+        /gAAANwAAAC5AAAAlgAAAHMAAABQAOPU/wDHsf8Aq47/AI9r/wBzSP8AVyX/AFUA/wBJANwAPQC5ADEA
+        lgAlAHMAGQBQAPDU/wDisf8A1I7/AMZr/wC4SP8AqiX/AKoA/wCSANwAegC5AGIAlgBKAHMAMgBQAP/U
+        /wD/sf8A/47/AP9r/wD/SP8A/yX/AP4A/gDcANwAuQC5AJYAlgBzAHMAUABQAP/U8AD/seIA/47UAP9r
+        xgD/SLgA/yWqAP8AqgDcAJIAuQB6AJYAYgBzAEoAUAAyAP/U4wD/sccA/46rAP9rjwD/SHMA/yVXAP8A
+        VQDcAEkAuQA9AJYAMQBzACUAUAAZAP/U1AD/sbEA/46OAP9rawD/SEgA/yUlAP4AAADcAAAAuQAAAJYA
+        AABzAAAAUAAAAP/j1AD/x7EA/6uOAP+PawD/c0gA/1clAP9VAADcSQAAuT0AAJYxAABzJQAAUBkAAP/w
+        1AD/4rEA/9SOAP/GawD/uEgA/6olAP+qAADckgAAuXoAAJZiAABzSgAAUDIAAP//1AD//7EA//+OAP//
+        awD//0gA//8lAP7+AADc3AAAubkAAJaWAABzcwAAUFAAAPD/1ADi/7EA1P+OAMb/awC4/0gAqv8lAKr/
+        AACS3AAAerkAAGKWAABKcwAAMlAAAOP/1ADH/7EAq/+OAI//awBz/0gAV/8lAFX/AABJ3AAAPbkAADGW
+        AAAlcwAAGVAAANT/1ACx/7EAjv+OAGv/awBI/0gAJf8lAAD+AAAA3AAAALkAAACWAAAAcwAAAFAAANT/
+        4wCx/8cAjv+rAGv/jwBI/3MAJf9XAAD/VQAA3EkAALk9AACWMQAAcyUAAFAZANT/8ACx/+IAjv/UAGv/
+        xgBI/7gAJf+qAAD/qgAA3JIAALl6AACWYgAAc0oAAFAyANT//wCx//8Ajv//AGv//wBI//8AJf//AAD+
+        /gAA3NwAALm5AACWlgAAc3MAAFBQAPLy8gDm5uYA2traAM7OzgDCwsIAtra2AKqqqgCenp4AkpKSAIaG
+        hgB6enoAbm5uAGJiYgBWVlYASkpKAD4+PgAyMjIAJiYmABoaGgAODg4A8Pv/AKSgoACAgIAAAAD/AAD/
+        AAAA//8A/wAAAP8A/wD//wAA////AAAAAAAAAAAAAO7xAAAAAAAAAAAAAAAAAPHx8QAAAAAAAAAAAAAA
+        8/H/8fEAAAAAAAAAAADx7vHo4vH4+PEAAAAAAADz7enj4+Lo7fH47gAAAADyB+Xk5OPj4uLi7vjuAADw
+        5+cHfn5+6/ji4v/u+PHx9+jn5wd7fn/j4+Li4vH46+n36Ofne3t95OPj4uLt+Pjr6ffo53t7e+Tk4+Pi
+        7Pjs7Ovp9wcJe3vl5OTj4+zu7u3s6+n36OfnB+Xk5OPv8/Ps7ezr6WNjc+cH5eTpAAAA8+zt7OvjY2Pn
+        5wfpAAAAAADz7O3s6+n36Of38wAAAAAAAADx7vjr6u3xAAAAAAD/n////x////wf///wB///4AP//8AB
+        //+AAP//AAD//wAA//8AAP//AAD//wAA//8AAf//gAP//8AH///wH///KAAAACAAAABAAAAAAQAIAAAA
+        AACABAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAIAAAIAAAACAgACAAAAAgACAAICAAADAwMAAwNzAAPDK
+        pgDU8P8AseL/AI7U/wBrxv8ASLj/ACWq/wAAqv8AAJLcAAB6uQAAYpYAAEpzAAAyUADU4/8Ascf/AI6r
+        /wBrj/8ASHP/ACVX/wAAVf8AAEncAAA9uQAAMZYAACVzAAAZUADU1P8AsbH/AI6O/wBra/8ASEj/ACUl
+        /wAAAP4AAADcAAAAuQAAAJYAAABzAAAAUADj1P8Ax7H/AKuO/wCPa/8Ac0j/AFcl/wBVAP8ASQDcAD0A
+        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
+</value>
+	</data>
+	<data name="OK">
+		<value>确 定(&amp;O)</value>
+	</data>
+	<data name="Cancel">
+		<value>取 消(&amp;C)</value>
+	</data>
+	<data name="Retry">
+		<value>重 试(&amp;R)</value>
+	</data>
+	<data name="Yes">
+		<value>是(&amp;Y)</value>
+	</data>
+	<data name="No">
+		<value>否(&amp;N)</value>
+	</data>
+	<data name="Detail">
+		<value>详 细(&amp;D)</value>
+	</data>
+	<data name="Advance">
+		<value>高 级 &amp;&gt;&gt;</value>
+	</data>
+	<data name="General">
+		<value>常 规 &amp;&lt;&lt;</value>
+	</data>
+	<data name="EMailLabel">
+		<value>电子邮箱：</value>
+	</data>
+	<data name="URLLabel">
+		<value>网络地址：</value>
+	</data>
+	<data name="EMail">
+		<value>Support@HTF.com.cn</value>
+	</data>
+	<data name="URL">
+		<value>http://www.HTF.com.cn</value>
+	</data>
+	<data name="LoginBoxTitle">
+		<value>系统登录</value>
+	</data>
+	<data name="UserName">
+		<value>登 录 名（&amp;U）</value>
+	</data>
+	<data name="Password">
+		<value>口令（&amp;P）</value>
+	</data>
+	<data name="Server">
+		<value>服 务 器（&amp;S）</value>
+	</data>
+	<data name="Database">
+		<value>数 据 库（&amp;D）</value>
+	</data>
+	<data name="Timeout">
+		<value>超时（&amp;T）</value>
+	</data>
+	<data name="INF-Logining">
+		<value>正在登录到系统，请稍候...</value>
+	</data>
+	<data name="INF-Exiting">
+		<value>系统正在退出，请稍候...</value>
+	</data>
+	<data name="INF-Initializing">
+		<value>系统正在初始化操作，请稍候...</value>
+	</data>
+	<data name="INF-Processing">
+		<value>系统正在后台处理，请稍候...</value>
+	</data>
+	<data name="INF-Refreshing">
+		<value>系统正在刷新数据，请稍候...</value>
+	</data>
+	<data name="INF-Saving">
+		<value>系统正在保存数据，请稍候...</value>
+	</data>
+	<data name="INF-Deleting">
+		<value>系统正在删除数据，请稍候...</value>
+	</data>
+	<data name="INF-Searching">
+		<value>系统正在检索数据，请稍候...</value>
+	</data>
+	<data name="INF-Printing">
+		<value>系统正在打印数据，请稍候...</value>
+	</data>
+	<data name="INF-Freeing">
+		<value>系统正在释放资源，请稍候...</value>
+	</data>
+	<data name="INF-Opening">
+		<value>系统正在打开文档，请稍候...</value>
+	</data>
+	<data name="INF-Closing">
+		<value>系统正在关闭文档，请稍候...</value>
+	</data>
+	<data name="$Login101Caption">
+		<value>登录失败</value>
+	</data>
+	<data name="$Login101Message">
+		<value>无效的登录名称或口令。</value>
+	</data>
+	<data name="$Login101Description">
+		<value>您可能没有登录的权限，有关系统权限请与您的系统管理员联系。
+　　您指定的登录名称可能是不存在的或是该登录口令输入有误。登录口令可能是区分大小写，请注意大小写锁定键的状态。</value>
+	</data>
+	<data name="$Login102Caption">
+		<value>登录失败</value>
+	</data>
+	<data name="$Login102Message">
+		<value>无效的登录帐户。</value>
+	</data>
+	<data name="$Login102Description">
+		<value>您可能没有登录的权限，有关系统权限请与您的系统管理员联系。
+　　您指定的登录名称可能是不存在的，请确定您输入的登录用户名称是否正确。</value>
+	</data>
+	<data name="$Login103Caption">
+		<value>登录失败</value>
+	</data>
+	<data name="$Login103Message">
+		<value>无效的登录口令。</value>
+	</data>
+	<data name="$Login103Description">
+		<value>您可能没有登录的权限，有关系统权限请与您的系统管理员联系。
+　　您指定的登录口令输入有误。登录口令可能是区分大小写，请注意大小写锁定键的状态。</value>
+	</data>
+	<data name="$Login104Caption">
+		<value>登录失败</value>
+	</data>
+	<data name="$Login104Message">
+		<value>服务器没有响应。</value>
+	</data>
+	<data name="$Login104Description">
+		<value>您指定的服务器可能是无效的或是该服务器没有启动，如果指定的是远程服务器，请检查您的计算机网络状况及相关设置或与您的系统管理员联系。有关本系统服务器的详细设置信息请参考本系统的《用户手册》或其它相关文档。</value>
+	</data>
+	<data name="$Login105Caption">
+		<value>登录失败</value>
+	</data>
+	<data name="$Login105Message">
+		<value>无效的数据库。</value>
+	</data>
+	<data name="$Login105Description">
+		<value>您指定的数据库不能打开，可能是因为该数据库不存在或是被其它用户独占锁定。</value>
+	</data>
+	<data name="$Login106Caption">
+		<value>登录失败</value>
+	</data>
+	<data name="$Login106Message">
+		<value>登录超时。</value>
+	</data>
+	<data name="$Login106Description">
+		<value>在指定的时间内没有收到服务器的响应，可能是因为您指定允许登录连接的时间太短，请重新设置该值再登录一次。</value>
+	</data>
+	<data name="$Login107Caption">
+		<value>登录失败</value>
+	</data>
+	<data name="$Login107Message">
+		<value>登录帐户已被系统锁定。</value>
+	</data>
+	<data name="$Login107Description">
+		<value>当前登录帐户已被系统管理员锁定，或因为曾违反安全机制而被系统自动锁定。具体原因请与您的系统管理员联系。</value>
+	</data>
+	<data name="$Login108Caption">
+		<value>登录失败</value>
+	</data>
+	<data name="$Login108Message">
+		<value>登录安全保护被激活，请重新启动系统。</value>
+	</data>
+	<data name="$Login108Description">
+		<value>您已经连续登录失败，并超出系统允许的登录失败次数范围，您必须重新启动系统。</value>
+	</data>
+	<data name="*999Caption">
+		<value>系统错误</value>
+	</data>
+	<data name="*999Message">
+		<value>发生了不可预知的错误，这可能与您的系统设置或该软件的版本有关，详细情况请与系统管理员联系。
+　　建议您及时将该系统升级到最新版本，欲知详情请参考我们网站中的即时信息或与我们取得联系！</value>
+	</data>
+	<data name="*999Description">
+		<value>发生无法预知的错误！
+
+错误来源：{0}
+错误消息：{1}
+项目任务信息：{2}</value>
+	</data>
+	<data name="*1001Caption">
+		<value>登录失败</value>
+	</data>
+	<data name="*1001Message">
+		<value>登录被强行拒绝。
+
+信息来源：{0}
+信息注释：{1}</value>
+	</data>
+	<data name="*1001Description">
+		<value>发生了不可预知的错误，这可能与您的系统设置或该软件的版本有关，详细情况请与系统管理员联系。
+　　建议您及时将该系统升级到最新版本，欲知详情请参考我们网站中的即时信息或与我们取得联系！</value>
+	</data>
+	<data name="?1000Caption">
+		<value>确认提示</value>
+	</data>
+	<data name="?1000Message">
+		<value>您确认要执行该项{0}操作吗？</value>
+	</data>
+	<data name="?1000Description">
+		<value>如果您选择是，将执行该操作；如果您选择否，将取消该项操作。</value>
+	</data>
+	<data name="?1001Caption">
+		<value>退出系统</value>
+	</data>
+	<data name="?1001Message">
+		<value>您确认要退出系统吗？</value>
+	</data>
+	<data name="?1001Description">
+		<value>如果您选择是，将退出该系统；如果您选择否，将取消该退出操作。</value>
+	</data>
+	<data name="?1002Caption">
+		<value>保存数据</value>
+	</data>
+	<data name="?1002Message">
+		<value>您是否要保存数据？</value>
+	</data>
+	<data name="?1002Description">
+		<value>如果您选择是，系统将对您所做的更改保存到数据库；如果您选择否，您所作的更改将被放弃。</value>
+	</data>
+	<data name="?1003">
+		<value>88</value>
+	</data>
+	<data name="?1003Caption">
+		<value>保存数据</value>
+	</data>
+	<data name="?1003Message">
+		<value>资料已经被改动过，您要保存吗？</value>
+	</data>
+	<data name="?1003Description">
+		<value>自上次保存以来数据已经被更改过。如果您选择是，系统将对您所做的更改保存到数据库；如果您选择否，您所作的更改将被放弃并关闭该操作界面；如果您选择取消，将取消该退出操作。</value>
+	</data>
+	<data name="?1004Caption">
+		<value>删除数据</value>
+	</data>
+	<data name="?1004Message">
+		<value>您确认要删除该项{0}数据（记录）吗？</value>
+	</data>
+	<data name="?1004Description">
+		<value>如果您选择是，系统将删除该条记录，并且您将无法恢复它；如果您选择否，系统将取消该删除操作。</value>
+	</data>
+	<data name="?1005Caption">
+		<value>确认提示</value>
+	</data>
+	<data name="?1005Message">
+		<value>该操作可能会影响其它数据，您确认要执行该操作吗？</value>
+	</data>
+	<data name="?1005Description">
+		<value>如果您选择是，系统将执行该操作，并且您可能无法恢复它；如果您选择否，系统将取消该项操作。</value>
+	</data>
+	<data name="!1001Caption">
+		<value>拒绝操作</value>
+	</data>
+	<data name="!1001Message">
+		<value>系统拒绝执行该项操作。</value>
+	</data>
+	<data name="!1001Description">
+		<value>您可能没有执行该项操作的权限，请确认取得该项操作的权限后再执行。
+
+　　有关权限的分配请与您的系统管理员联系。
+　　有关相应用户和群组（角色）权限的定义请参考本系统的《用户手册》或其它相关文档。</value>
+	</data>
+	<data name="!1002">
+		<value>372</value>
+	</data>
+	<data name="!1002Caption">
+		<value>系统警告</value>
+	</data>
+	<data name="!1002Message">
+		<value>该操作可能会导致数据无法恢复，请慎重选择！
+
+您是否确定要继续执行该项操作？
+选择‘确定’则继续执行，否则选择‘否’取消该操作。</value>
+	</data>
+	<data name="!1002Description">
+		<value>由于该操作可能会损坏重要数据且无法恢复，所以提示警示信息以请慎重决定。</value>
+	</data>
+	<data name="$SaveSucceedCaption">
+		<value>系统提示</value>
+	</data>
+	<data name="$SaveSucceedMessage">
+		<value>保存成功。</value>
+	</data>
+	<data name="$SaveSucceedDescription">
+		<value>当前数据已经保存并成功。该信息为反馈提示信息，您可以通过系统配置来控制是否需要显示该反馈信息。
+有关系统配置及其操作方法请参考本系统的《用户手册》或其它相关文档。</value>
+	</data>
+	<data name="$AddNewSucceedCaption">
+		<value>系统提示</value>
+	</data>
+	<data name="$AddNewSucceedMessage">
+		<value>新增成功。</value>
+	</data>
+	<data name="$AddNewSucceedDescription">
+		<value>当前数据已经新增并成功。该信息为反馈提示信息，您可以通过系统配置来控制是否需要显示该反馈信息。
+有关系统配置及其操作方法请参考本系统的《用户手册》或其它相关文档。</value>
+	</data>
+	<data name="$DeleteSucceedCaption">
+		<value>系统提示</value>
+	</data>
+	<data name="$DeleteSucceedMessage">
+		<value>删除成功。</value>
+	</data>
+	<data name="$DeleteSucceedDescription">
+		<value>当前数据已经删除并成功。该信息为反馈提示信息，您可以通过系统配置来控制是否需要显示该反馈信息。
+有关系统配置及其操作方法请参考本系统的《用户手册》或其它相关文档。</value>
+	</data>
+	<data name="$MakeSucceedCaption">
+		<value>系统提示</value>
+	</data>
+	<data name="$MakeSucceedMessage">
+		<value>制作成功。</value>
+	</data>
+	<data name="$MakeSucceedDescription">
+		<value>当前制作操作已执行成功。该信息为反馈提示信息，您可以通过系统配置来控制是否需要显示该反馈信息。
+有关系统配置及其操作方法请参考本系统的《用户手册》或其它相关文档。</value>
+	</data>
+	<data name="$UploadSucceedCaption">
+		<value>系统提示</value>
+	</data>
+	<data name="$UploadSucceedMessage">
+		<value>上传成功。</value>
+	</data>
+	<data name="$UploadSucceedDescription">
+		<value>当前上传操作已执行成功。该信息为反馈提示信息，您可以通过系统配置来控制是否需要显示该反馈信息。
+有关系统配置及其操作方法请参考本系统的《用户手册》或其它相关文档。</value>
+	</data>
+	<data name="$SubmitSucceedCaption">
+		<value>系统提示</value>
+	</data>
+	<data name="$SubmitSucceedMessage">
+		<value>提交成功。</value>
+	</data>
+	<data name="$SubmitSucceedDescription">
+		<value>当前提交操作已执行成功。该信息为反馈提示信息，您可以通过系统配置来控制是否需要显示该反馈信息。
+有关系统配置及其操作方法请参考本系统的《用户手册》或其它相关文档。</value>
+	</data>
+	<data name="$OperateSucceedCaption">
+		<value>系统提示</value>
+	</data>
+	<data name="$OperateSucceedMessage">
+		<value>操作执行成功。</value>
+	</data>
+	<data name="$OperateSucceedDescription">
+		<value>当前该项操作已执行成功。该信息为反馈提示信息，您可以通过系统配置来控制是否需要显示该反馈信息。
+有关系统配置及其操作方法请参考本系统的《用户手册》或其它相关文档。</value>
+	</data>
+	<data name="$1001Caption">
+		<value>无效的值</value>
+	</data>
+	<data name="$1001Message">
+		<value>指定的{0}输入项不能为空值或全空字符，请重新输入。</value>
+	</data>
+	<data name="$1001Description">
+		<value>您必须为指定的输入项输入非空的有效值。
+有关更多输入项规范、约束等信息请参考本系统的《用户手册》或其它相关文档。</value>
+	</data>
+	<data name="$1002Caption">
+		<value>无效的数据类型</value>
+	</data>
+	<data name="$1002Message">
+		<value>{0}输入项中包含不属于该输入项数据类型的字符、数字，或者输入项中的数据不符合其数据类型。</value>
+	</data>
+	<data name="$1002Description">
+		<value>您输入的内容为一个不符合指定输入项数据类型的数据，系统无法将其转换为指定数据类型的数值，请仔细检查您输入的数据是否完全符合当前输入项的数据类型。
+有关更多输入项规范、约束等信息请参考本系统的《用户手册》或其它相关文档。</value>
+	</data>
+	<data name="$1003Caption">
+		<value>无效的数据</value>
+	</data>
+	<data name="$1003Message">
+		<value>{0}输入项中的值不符合系统要求。</value>
+	</data>
+	<data name="$1003Description">
+		<value>您输入的内容为一个不符合指定输入项要求的数据，该错误通常是由于您录入了一个不符合该输入项逻辑约定的数据，例如超出指定输入项的最大长度/大小等。
+有关更多输入项规范、约束等信息请参考本系统的《用户手册》或其它相关文档。</value>
+	</data>
+	<data name="$1004Caption">
+		<value>无效的参数</value>
+	</data>
+	<data name="$1004Message">
+		<value>无效的{0}运算数据，请确定必须的运算参数/数据已经有效存在后再重新执行该操作。</value>
+	</data>
+	<data name="$1004Description">
+		<value>造成该异常的原因可能是原始数据尚未完全建立，请确认原始数据完整后再重新执行该操作。
+有关更多系统运算规范、约束等信息请参考本系统的《用户手册》或其它相关文档。</value>
+	</data>
+	<data name="$1005Caption">
+		<value>无效的参数</value>
+	</data>
+	<data name="$1005Message">
+		<value>无效或没有可供操作的{0}数据，请确定必须的操作参数/数据已经有效存在后再重新执行该操作。</value>
+	</data>
+	<data name="$1005Description">
+		<value>请指定操作数据后再重新执行该操作。</value>
+	</data>
+	<data name="$1006Caption">
+		<value>无效的操作</value>
+	</data>
+	<data name="$1006Message">
+		<value>违反数据完整性约束。不能删除或修改{0}数据项，该数据项可能被其它数据项引用，更改或删除该项将破坏数据的完整性。</value>
+	</data>
+	<data name="$1006Description">
+		<value>造成该异常的原因通常是因为其它记录（数据项）对该记录（数据项）关联引用造成的。由于该记录或数据项存在其它关联数据，因此您无法直接更改该记录/数据项中关联字段（栏位）的值亦不能删除该记录或数据项。
+有关系统中各个应用表单的关联、约束等信息请参考本系统的《用户手册》或其它相关文档。</value>
+	</data>
+	<data name="$1007Caption">
+		<value>无效的数据</value>
+	</data>
+	<data name="$1007Message">
+		<value>当前没有可供操作的{0}数据，请先获取操作数据后再重新执行该操作。</value>
+	</data>
+	<data name="$1007Description">
+		<value>当前记录（数据项）为空或系统无法自动获得操作数据，请重新获取数据后再重新执行该操作。建议您通过指定一个“主关键字”值来定位记录指针（数据项）或强制执行一次刷新操作。
+有关系统中各个应用表单的主关键字信息请参考本系统的《用户手册》或其它相关文档。</value>
+	</data>
+	<data name="$1008Caption">
+		<value>无效的数据</value>
+	</data>
+	<data name="$1008Message">
+		<value>{0}输入项中的值不符合系统要求，其值应小于{1}。</value>
+	</data>
+	<data name="$1008Description">
+		<value>您输入的内容为一个不符合指定输入项要求的数据，该错误通常是由于您录入了一个不符合该输入项逻辑约定的数据。
+有关更多输入项规范、约束等信息请参考本系统的《用户手册》或其它相关文档。</value>
+	</data>
+	<data name="$1009Caption">
+		<value>无效的数据</value>
+	</data>
+	<data name="$1009Message">
+		<value>不能继续执行当前操作，因为其中包含无效或非法的{0}数据，请确定必须的操作参数/数据完全正确后再重新执行该操作。</value>
+	</data>
+	<data name="$1009Description">
+		<value>请确定必须的操作参数/数据完全正确后再重新执行该操作。</value>
+	</data>
+	<data name="$2001Caption">
+		<value>文件操作失败</value>
+	</data>
+	<data name="$2001Message">
+		<value>文件无法打开。</value>
+	</data>
+	<data name="$2001Description">
+		<value>指定的{0}文件无法打开，该错误通常是由于I/O异常引起。请确认指定的文件没有被其它用户独占或者文件是否已经损坏。</value>
+	</data>
+	<data name="$2002Caption">
+		<value>文件操作失败</value>
+	</data>
+	<data name="$2002Message">
+		<value>无效的文件路径或文件不存在。</value>
+	</data>
+	<data name="$2002Description">
+		<value>指定的{0}文件没有找到，请确认指定的文件是否存在，如果该文件在网络中请确认网路连接是否正常。</value>
+	</data>
+	<data name="$2003Caption">
+		<value>文件操作失败</value>
+	</data>
+	<data name="$2003Message">
+		<value>无效的文件类型或无法识别的文件类型。</value>
+	</data>
+	<data name="$2003Description">
+		<value>指定的{0}文件类型不匹配或无法识别，请确认指定的文件是否符合系统要求的文件格式并确保其是否完好。</value>
+	</data>
+	<data name="$2004Caption">
+		<value>文件操作失败</value>
+	</data>
+	<data name="$2004Message">
+		<value>文件内容空。</value>
+	</data>
+	<data name="$2004Description">
+		<value>指定的{0}文件内容为空，请确认指定的文件是否符合系统要求的文件格式并确保其是否完好。</value>
+	</data>
+	<data name="?X001Caption">
+		<value>请求确认</value>
+	</data>
+	<data name="?X001Message">
+		<value>您确定要将该项目『{0}』从当前签约计划退出？</value>
+	</data>
+	<data name="?X001Description">
+		<value></value>
+	</data>
+	<data name="?X002Caption">
+		<value>请求确认</value>
+	</data>
+	<data name="?X002Message">
+		<value>您确定要撤销该『{0}』会议？</value>
+	</data>
+	<data name="?X002Description">
+		<value></value>
+	</data>
+	<data name="?X003Caption">
+		<value>请求确认</value>
+	</data>
+	<data name="?X003Message">
+		<value>您确定要将该项目『{0}』从当前会议退出？</value>
+	</data>
+	<data name="?X003Description">
+		<value></value>
+	</data>
+	<data name="?X004Caption">
+		<value>请求确认</value>
+	</data>
+	<data name="?X004Message">
+		<value>您将删除原有还款计划，并产生新的还款计划？
+起始日期：{0} 笔数：{1}</value>
+	</data>
+	<data name="?X004Description">
+		<value></value>
+	</data>
+	<data name="?X005Caption">
+		<value>请求确认</value>
+	</data>
+	<data name="?X005Message">
+		<value>股东总投资资本不等于注册资本，你要强制保存？</value>
+	</data>
+	<data name="?X005Description">
+		<value></value>
+	</data>
+	<data name="?X006Caption">
+		<value>请求确认</value>
+	</data>
+	<data name="?X006Message">
+		<value>『资产合计』与『负债』和『所有者(股本)权益总计』两项不相等。
+您确认要保存吗？</value>
+	</data>
+	<data name="?X006Description">
+		<value></value>
+	</data>
+	<data name="?X007Caption">
+		<value>请求确认</value>
+	</data>
+	<data name="?X007Message">
+		<value>需要向担保部长发送消息吗？</value>
+	</data>
+	<data name="?X007Description">
+		<value></value>
+	</data>
+	<data name="?X008Caption">
+		<value>请求确认</value>
+	</data>
+	<data name="?X008Message">
+		<value>该项目没有进行财务分析，是否继续？</value>
+	</data>
+	<data name="?X008Description">
+		<value></value>
+	</data>
+	<data name="$X001Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X001Message">
+		<value>您只能对最后一条担保意向进行操作。</value>
+	</data>
+	<data name="$X001Description">
+		<value></value>
+	</data>
+	<data name="$X002Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X002Message">
+		<value>您只能对最后一条银行回复记录进行修改。</value>
+	</data>
+	<data name="$X002Description">
+		<value></value>
+	</data>
+	<data name="$X003Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X003Message">
+		<value>您只能对最后一条担保意向书进行提交。</value>
+	</data>
+	<data name="$X003Description">
+		<value></value>
+	</data>
+	<data name="$X004Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X004Message">
+		<value>现在企业已经进行了 3 次担保意向申请，无法再次进行担保意向申请。</value>
+	</data>
+	<data name="$X004Description">
+		<value></value>
+	</data>
+	<data name="$X005Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X005Message">
+		<value>该担保意向书已经存在银行回复，无法进行修改操作。</value>
+	</data>
+	<data name="$X005Description">
+		<value></value>
+	</data>
+	<data name="$X006Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X006Message">
+		<value>当前没有担保意向书或者没有选择担保意向书，无法完成提交操作。</value>
+	</data>
+	<data name="$X006Description">
+		<value></value>
+	</data>
+	<data name="$X007Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X007Message">
+		<value>该担保意向书没有签发，不能执行签发信息删除操作。</value>
+	</data>
+	<data name="$X007Description">
+		<value></value>
+	</data>
+	<data name="$X008Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X008Message">
+		<value>没有对应的签发意见。</value>
+	</data>
+	<data name="$X008Description">
+		<value></value>
+	</data>
+	<data name="$X009Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X009Message">
+		<value>您只能对最后一条签发意见进行修改。</value>
+	</data>
+	<data name="$X009Description">
+		<value></value>
+	</data>
+	<data name="$X011Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X011Message">
+		<value>暂不存在该文档模版，请制作放款通知书。</value>
+	</data>
+	<data name="$X011Description">
+		<value></value>
+	</data>
+	<data name="$X012Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X012Message">
+		<value>该项目并不存在会议评审记录。</value>
+	</data>
+	<data name="$X012Description">
+		<value></value>
+	</data>
+	<data name="$X013Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X013Message">
+		<value>该记录未保存文件内容!不能打开文件。</value>
+	</data>
+	<data name="$X013Description">
+		<value></value>
+	</data>
+	<data name="$X014Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X014Message">
+		<value>该记录未保存，不能上载文件。</value>
+	</data>
+	<data name="$X014Description">
+		<value></value>
+	</data>
+	<data name="$X015Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X015Message">
+		<value>替换标记与替换内容的个数不等，无法制作『{0}』。</value>
+	</data>
+	<data name="$X015Description">
+		<value></value>
+	</data>
+	<data name="$X016Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X016Message">
+		<value>该项目处于『{0}』阶段，没有相应的项目企业信息。无法制作『{1}』。</value>
+	</data>
+	<data name="$X016Description">
+		<value></value>
+	</data>
+	<data name="$X017Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X017Message">
+		<value>无须制作『{0}』。</value>
+	</data>
+	<data name="$X017Description">
+		<value></value>
+	</data>
+	<data name="$X018Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X018Message">
+		<value>文件属性为只读，无法上载。</value>
+	</data>
+	<data name="$X018Description">
+		<value></value>
+	</data>
+	<data name="$X019Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X019Message">
+		<value>该记录未保存文件内容，不能打开文件。</value>
+	</data>
+	<data name="$X019Description">
+		<value></value>
+	</data>
+	<data name="$X020Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X020Message">
+		<value>该记录未保存，不能上载文件。</value>
+	</data>
+	<data name="$X020Description">
+		<value></value>
+	</data>
+	<data name="$X021Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X021Message">
+		<value>有未上载文件的记录，不允许提交。</value>
+	</data>
+	<data name="$X021Description">
+		<value></value>
+	</data>
+	<data name="$X022Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X022Message">
+		<value>有关键的材料未确认，不能提交。</value>
+	</data>
+	<data name="$X022Description">
+		<value></value>
+	</data>
+	<data name="$X023Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X023Message">
+		<value>请选中详细信息的记录。</value>
+	</data>
+	<data name="$X023Description">
+		<value></value>
+	</data>
+	<data name="$X024Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X024Message">
+		<value>没有可以增加咨询信息的企业，请点击查询。</value>
+	</data>
+	<data name="$X024Description">
+		<value></value>
+	</data>
+	<data name="$X025Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X025Message">
+		<value>未按收费标准收费，不能提交。</value>
+	</data>
+	<data name="$X025Description">
+		<value></value>
+	</data>
+	<data name="$X026Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X026Message">
+		<value>项目暂缓报告不存在，提交无效。</value>
+	</data>
+	<data name="$X026Description">
+		<value></value>
+	</data>
+	<data name="$X027Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X027Message">
+		<value>该项目不符合生成还款计划的要求，请使用新增来产生还款计划。</value>
+	</data>
+	<data name="$X027Description">
+		<value></value>
+	</data>
+	<data name="$X028Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X028Message">
+		<value>该项目会议评审结论已提交。</value>
+	</data>
+	<data name="$X028Description">
+		<value></value>
+	</data>
+	<data name="$X029Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X029Message">
+		<value>您设置的会议(开始时间)已存在于会议日期列表，不能设置会议。</value>
+	</data>
+	<data name="$X029Description">
+		<value></value>
+	</data>
+	<data name="$X030Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X030Message">
+		<value>并无会议可撤销。</value>
+	</data>
+	<data name="$X030Description">
+		<value></value>
+	</data>
+	<data name="$X031Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X031Message">
+		<value>该项目会议评审结论已提交。</value>
+	</data>
+	<data name="$X031Description">
+		<value></value>
+	</data>
+	<data name="$X032Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X032Message">
+		<value>金额已超过 {0} 元。</value>
+	</data>
+	<data name="$X032Description">
+		<value></value>
+	</data>
+	<data name="$X033Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X033Message">
+		<value>每次还款额已大于贷款金额。</value>
+	</data>
+	<data name="$X033Description">
+		<value></value>
+	</data>
+	<data name="$X034Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X034Message">
+		<value>该项目没有保后记录，无法评价。</value>
+	</data>
+	<data name="$X034Description">
+		<value></value>
+	</data>
+	<data name="$X035Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X035Message">
+		<value>该项目没有保后记录，无法审核。</value>
+	</data>
+	<data name="$X035Description">
+		<value></value>
+	</data>
+	<data name="$X036Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X036Message">
+		<value>该项目贷款金额为零或还款方式不存在。</value>
+	</data>
+	<data name="$X036Description">
+		<value></value>
+	</data>
+	<data name="$X037Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X037Message">
+		<value>您选择的还款日期已存在已还款计划中，请选择另一日期。</value>
+	</data>
+	<data name="$X037Description">
+		<value></value>
+	</data>
+	<data name="$X038Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X038Message">
+		<value>该项目不符合生成还款计划的要求，请使用新增来产生还款计划。</value>
+	</data>
+	<data name="$X038Description">
+		<value></value>
+	</data>
+	<data name="$X039Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X039Message">
+		<value>没有项目安排到该会议，不能提交。</value>
+	</data>
+	<data name="$X039Description">
+		<value></value>
+	</data>
+	<data name="$X040Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X040Message">
+		<value>没有要签约的项目。</value>
+	</data>
+	<data name="$X040Description">
+		<value></value>
+	</data>
+	<data name="$X041Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X041Message">
+		<value>项目『{0}』回退失败。</value>
+	</data>
+	<data name="$X041Description">
+		<value></value>
+	</data>
+	<data name="$X042Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X042Message">
+		<value>没有项目安排到该签约计划，不能提交。</value>
+	</data>
+	<data name="$X042Description">
+		<value></value>
+	</data>
+	<data name="$X043Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X043Message">
+		<value>请先制作并上载保后检查记录表，再提交。</value>
+	</data>
+	<data name="$X043Description">
+		<value></value>
+	</data>
+	<data name="$X044Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X044Message">
+		<value>请先录入制表年月『{0}』的财务数据。</value>
+	</data>
+	<data name="$X044Description">
+		<value></value>
+	</data>
+	<data name="$X045Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X045Message">
+		<value>项目暂缓报告不存在，提交无效。</value>
+	</data>
+	<data name="$X045Description">
+		<value></value>
+	</data>
+	<data name="$X046Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X046Message">
+		<value>保存项目调研结论失败，不能提交。</value>
+	</data>
+	<data name="$X046Description">
+		<value></value>
+	</data>
+	<data name="$X047Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X047Message">
+		<value>推荐金额已大于 {0} 万元。</value>
+	</data>
+	<data name="$X047Description">
+		<value></value>
+	</data>
+	<data name="$X048Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X048Message">
+		<value>没有要上会的项目。</value>
+	</data>
+	<data name="$X048Description">
+		<value></value>
+	</data>
+	<data name="$X049Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X049Message">
+		<value>尚有合同未签订，不能提交。</value>
+	</data>
+	<data name="$X049Description">
+		<value></value>
+	</data>
+	<data name="$X050Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X050Message">
+		<value>没有符合条件的查询信息。</value>
+	</data>
+	<data name="$X050Description">
+		<value></value>
+	</data>
+	<data name="$X051Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X051Message">
+		<value>会计期间已存在。</value>
+	</data>
+	<data name="$X051Description">
+		<value></value>
+	</data>
+	<data name="$X052Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X052Message">
+		<value>会计期间不存在。</value>
+	</data>
+	<data name="$X052Description">
+		<value></value>
+	</data>
+	<data name="$X053Caption">
+		<value>系统提示</value>
+	</data>
+	<data name="$X053Message">
+		<value>项目没有初审结论，请确认输入初审意见并进行保存。</value>
+	</data>
+	<data name="$X053Description">
+		<value></value>
+	</data>
+	<data name="?X009Caption">
+		<value>请求确认</value>
+	</data>
+	<data name="?X009Message">
+		<value>制表年月为{0}的财务数据没有录入，请问是否要继续？</value>
+	</data>
+	<data name="?X009Description">
+		<value></value>
+	</data>
+</root>
